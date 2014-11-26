@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script>
+	function function1(){
+		var a=document.getElementById("adult").value;
+		var c=document.getElementById("child").value;
+		var t=document.getElementById("total").value;
+		if(a==""){
+			alert("please enter no of adult");
+			return;
+		}
+		if(c==""){
+			alert("please enter no of child");
+			return;
+		}
+	}
+	function number(){
+		a=document.getElementById("adult").value;
+		  document.getElementById("total").value=a*100;
+	}
+	function number1(){
+		c=document.getElementById("child").value;
+		  document.getElementById("total").value=c*50;
+		  document.getElementById("total").value=a*100+c*50;
+	}
+  </script>
+ </HEAD>
+
+ <BODY>
+  <table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td>Adult:</td>
+		<td>
+			<input type="text" id="adult" onkeyup="number()">
+		</td>
+	</tr>
+	<tr>
+		<td>Child:</td>
+		<td>
+			<input type="text" id="child" onkeyup="number1()">
+		</td>
+	</tr>
+	<tr>
+		<td>Total:</td>
+		<td>
+			<input type="text" id="total">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="button" value="Click" onclick="function1()">
+		</td>
+	</tr>
+  </table>
+ </BODY>
+</HTML>

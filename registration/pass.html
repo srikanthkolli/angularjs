@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function manoj()
+  {
+	  var i=document.getElementById("pass").value;
+	  var j=document.getElementById("phone").value;
+	  if(i=="")
+	  {
+		  alert("please select password");
+		  document.getElementById("pass").focus();
+		  return;
+		  }
+		  else if(j=="")
+		  {
+			  alert("please select phoneno");
+			  document.getElementById("phone").focus();
+			  return;
+			  }
+			  else
+			  {
+				  alert("validation completed");
+				  }
+	  }
+  </script>
+ </head>
+
+ <body>
+  Password<input type="password" id="pass"><br>
+  Phoneno<input type="text" id="phone">
+  <input type="button" value="Click" onclick="manoj()">
+ </body>
+</html>

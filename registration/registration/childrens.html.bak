@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script>
+   function function1(){
+	var f=document.getElementById("first").value;
+	var l=document.getElementById("last").value;
+	var pass=document.getElementById("word").value;
+	var r1=document.getElementById("male").checked;
+	var r2=document.getElementById("female").checked;
+	var e=document.getElementById("email").value;
+	var p=document.getElementById("phone").value;
+	var a=document.getElementById("gens").value;
+	var l1=document.getElementById("ladies").value;
+	var c=document.getElementById("childrens").value;
+	var t=document.getElementById("total").value;
+	var nameRegex = /^[a-zA-Z\-]+$/;
+	var re=/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	if(f==""){
+		alert("please enter your name");
+		document.getElementById("first").focus();
+		return;
+	}
+	if(nameRegex.test(f)==false){
+		alert("invalid name");
+		document.getElementById("first").focus();
+		return;
+	}
+	if(l==""){
+		alert("please enter your lastname");
+		document.getElementById("last").focus();
+		return;
+	}
+	if(nameRegex.test(l)==false){
+		alert("invalid lastname");
+		document.getElementById("last").focus();
+		return;
+	}
+	if(pass==""){
+		alert("please enter your password");
+		document.getElementById("word").focus();
+		return;
+	}
+	if(r1==false && r2==false){
+		alert("please select your gender");
+		return;
+	}
+	
+	if(e==""){
+		alert("please enter your email");
+		document.getElementById("email").focus();
+		return;
+	}
+	if(re.test(e)==false){
+		alert("invalid email");
+		document.getElementById("email").focus();
+		return;
+	}
+	if(p==""){
+		alert("please enter your phone number");
+		document.getElementById("phone").focus();
+		return;
+	}
+	if(isNaN(p)){
+		alert("invalid number");
+		return;
+	}
+	
+	if(a==""){
+		alert("please enter number of gens");
+		document.getElementById("gens").focus();
+		return;
+	}
+	if(isNaN(a)){
+		alert("invalid number");
+		document.getElementById("gens").focus();
+		return;
+	}
+	if(l1==""){
+		alert("please enter number of ladies");
+		document.getElementById("ladies").focus();
+		return;
+	}
+	if(isNaN(l1)){
+		alert("invalid number");
+		document.getElementById("ladies").focus();
+		return;
+	}
+	if(c==""){
+		alert("please enter number of childrens");
+		document.getElementById("childrens").focus();
+		return;
+	}
+	if(isNaN(c)){
+		alert("invalid number");
+		document.getElementById("childrens").focus();
+		return;
+	}
+	
+  }
+  function number(){
+	a=document.getElementById("gens").value;
+	  document.getElementById("total").value=a*100;
+  }
+  function number1(){
+	c=document.getElementById("ladies").value;
+	  document.getElementById("total").value=c*100;
+	  document.getElementById("total").value=parseInt(a*100)+parseInt(c*100);
+	  
+  }
+  function number2(){
+	l1=document.getElementById("childrens").value;
+	   document.getElementById("total").value=l1*50;
+	   document.getElementById("total").value=parseInt(a*100)+parseInt(c*100)+parseInt(l1*50);
+  }
+  </script>
+ </HEAD>
+
+ <BODY>
+  <table border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr>
+		<td>First Name</td>
+		<td>
+			<input type="text" id="first">
+		</td>
+	</tr>
+	<tr>
+		<td>Last Name</td>
+		<td>
+			<input type="text" id="last">
+		</td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td>
+			<input type="password" id="word">
+		</td>
+	</tr>
+	<tr>
+		<td>Gender</td>
+		<td>
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+						<input type="radio" value="male" name="user" id="male">Male
+					</td>
+					<td>
+						<input type="radio" value="female" name="user" id="female">Female
+					</td>
+				</tr>
+
+			</table>
+		</td> 
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td>
+			<input type="text" id="email">
+		</td>
+	</tr>
+	<tr>
+		<td>Phone Number</td>
+		<td>
+			<input type="text" id="phone">
+		</td>
+	</tr>
+	<tr>
+		<td>Gens</td>
+		<td>
+			<input type="text" id="gens" onkeyup="number()">
+		</td>
+	</tr>
+	<tr>
+		<td>Ladies</td>
+		<td>
+			<input type="text" id="ladies" onkeyup="number1()">
+		</td>
+	</tr>
+	<tr>
+		<td>Childrens</td>
+		<td>
+			<input type="text" id="childrens" onkeyup="number2()">
+		</td>
+	</tr>
+	<tr>
+		<td>Total</td>
+		<td>
+			<input type="text" id="total">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+			<input type="button" value="Click" onclick="function1()">
+		</td>
+	</tr>
+  <table>
+ </BODY>
+</HTML>

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+	.pos_left{
+		position:relative;
+		left:-50px;
+	}
+	.pos_right{
+		position:relative;
+		left:50px;
+	}
+  </style>
+ </HEAD>
+
+ <BODY>
+  <h1>This is a heading.</h1>
+  <h2 class="pos_left">This is a another heading.</h2>
+  <h1>This is a heading.</h1>
+  <h2 class="pos_right">This is a another heading.</h2>
+ </BODY>
+</HTML>

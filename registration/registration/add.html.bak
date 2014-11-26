@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ 
+  <script>
+  function adding()
+  {
+	   t1=document.getElementById("first").value;
+	   t2=document.getElementById("second").value;
+		 tot=parseFloat(t1) + parseFloat(t2);
+		if(t1=="")
+		{
+			alert("Please enter first number");
+			document.getElementById("first").focus();
+			}
+			else if (isNaN(t1))
+			{
+				alert("please enter number");
+			}
+			else if(t2=="")
+			{
+				alert("Please enter second number");
+				document.getElementById("second").focus();
+
+				}
+				else if (isNaN(t2))
+				{
+				alert("please enter number");
+				}
+				else
+				{
+					alert("Total:"+tot);
+					document.getElementById("first").value="";
+					document.getElementById("second").value="";
+
+					}
+	  }
+  function sub()
+  {
+	   t1=document.getElementById("first").value;
+	   t2=document.getElementById("second").value;
+		 tot=parseFloat(t1) - parseFloat(t2);
+		if(t1=="")
+		{
+			alert("Please enter first number");
+			document.getElementById("first").focus();
+			}
+			else if (isNaN(t1))
+			{
+				alert("please enter number");
+			}
+			else if(t2=="")
+			{
+				alert("Please enter second number");
+				document.getElementById("second").focus();
+
+	         }
+		     else if (isNaN(t2))
+			 {
+			 alert("please enter number");
+			 }
+			 else
+			 {
+				alert("sub:"+tot);
+				document.getElementById("first").value="";
+				document.getElementById("second").value="";
+			  }
+		}
+  function mul()
+  {
+		t1=document.getElementById("first").value;
+		t2=document.getElementById("second").value;
+			tot=t1 * t2;
+			if(t1=="")
+			{
+				alert("Please enter first number");
+				document.getElementById("first").focus();
+			}
+			else if (isNaN(t1))
+			{
+				alert("please enter number");
+			}
+			else if(t2=="")
+			{
+				alert("Please enter second number");
+				document.getElementById("second").focus();
+
+			}
+			else if (isNaN(t2))
+			{
+				alert("please enter number");
+			}
+			else
+			{
+				alert("mul:"+tot);
+				document.getElementById("first").value="";
+				document.getElementById("second").value="";
+			}
+
+		  }
+  function div()
+  { 
+		t1=document.getElementById("first").value;
+		t2=document.getElementById("second").value;
+			tot=t1 / t2;
+			if(t1=="")
+			{
+				alert("Please enter first number");
+				document.getElementById("first").focus();
+			}
+			else if (isNaN(t1))
+			{
+				alert("please enter number");
+			}
+			else if(t2=="")
+			{
+				alert("Please enter second number");
+				document.getElementById("second").focus();
+
+			}
+			else if (isNaN(t2))
+			{
+				alert("please enter number");
+			}
+			else
+			{
+				alert("div:"+tot);
+				document.getElementById("first").value="";
+				document.getElementById("second").value="";
+			}
+
+		  }
+
+
+  </script>
+ </head>
+
+ <body>
+ <br>
+ <br>
+ <br>
+ 
+  <table cellspacing="0" cellpadding="10" border="1" align="center">
+	<tr style="color:red;">
+		<td>Enter first number:</td>
+		<td>
+			<input type="text" id="first">
+		</td>
+	</tr>
+	<tr style="color:blue;">
+		<td>Enter second number:</td>
+		<td>
+			<input type="text" id="second">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="button" value="Add"  onclick="adding()">
+		</td>
+		<td>
+			<input type="button" value="Sub" onclick="sub()">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="button" value="Mul" onclick="mul()">
+		</td>
+		<td>
+			<input type="button" value="Div" onclick="div()">
+		</td>
+	</tr>
+	
+  </table>
+ </body>
+</html>

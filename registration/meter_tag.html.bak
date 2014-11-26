@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+ </HEAD>
+
+ <BODY>
+ <p>This is a meter_tag.</p>
+ <meter value="8" min="0" max="10" low="3" high="5"></meter><br>
+ <meter value="0.6">60%</meter><br>
+ <meter value="70" min="0" max="100" low="40" high="50"></meter>
+ </BODY>
+</HTML>

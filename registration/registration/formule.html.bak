@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function function1(){
+	  var n=document.getElementById("number").value;
+	  
+	  sum=(n*(n+1))/2;
+	  alert("sum of the values"+sum);
+  }
+  </script>
+ </head>
+
+ <body>
+  <input type="text" id="number">
+  <input type="button" value="Click" onclick="function1()">
+ </body>
+</html>

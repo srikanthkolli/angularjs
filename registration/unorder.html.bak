@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+	.menu li a{
+		padding:0px 40px 0px 0px;
+	}
+	li{
+		display:inline;
+	}
+	a:hover{
+		color:green;
+		text-decoration:none;
+		font-weight:bold;
+		font-family:verdana;
+	}
+  </style>
+ </HEAD>
+
+ <BODY>
+  <div>
+	<ul class="menu">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Contact Us</a></li>
+		<li><a href="#">Users</a></li>
+		<li><a href="#">About Us</a></li>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Contact Us</a></li>
+		<li><a href="#">Users</a></li>
+		<li><a href="#">About Us</a></li>
+	</ul>
+  </div>
+ </BODY>
+</HTML>

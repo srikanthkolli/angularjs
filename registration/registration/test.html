@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function function1(){
+	  var a=document.getElementById("first").value;
+	  var b=document.getElementById("pass").value;
+	  var nameRegex = /^[a-zA-Z\-]+$/;
+	  if(a==""){
+		  alert("please enter your firstname");
+		  document.getElementById("first").focus();
+	  }
+	  else if(nameRegex.test(a)==false){
+		  alert("invalid first name");
+		  document.getElementById("first").focus();
+	  }
+	  else if(b==""){
+		  alert("please enter password");
+		  document.getElementById("pass").focus();
+	  }
+  }
+  </script>
+ </head>
+
+ <body>
+	<table border="0" cellspacing="0" cellpadding="0" align="center">
+		<tr>
+			<td>First Name:</td>
+			<td>
+				<input type="text" id="first">
+			</td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td>
+				<input type="password" id="pass">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="button" value="Login" onclick="function1()">
+			</td>
+		</tr>
+	</table>
+ </body>
+</html>

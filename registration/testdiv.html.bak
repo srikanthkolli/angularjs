@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+ </HEAD>
+
+ <BODY>
+  <div style="height:50px;border:1px solid yellow;">
+	<div style="border:1px solid pink;width:40%;height:20px;float:left;">
+		<div>
+			Name
+		</div>
+	</div>
+	<div style="border:1px solid blue;width:35%;height:20px;float:right;">
+		<div>
+			Country
+		</div>
+	</div>
+	<div style="border:1px solid red;width:20%;height:20px;float:right;">
+		<div>
+			Lastname
+		</div>
+	</div>
+  </div>
+ </BODY>
+</HTML>

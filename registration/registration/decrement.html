@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+	function decrement()
+		{
+			 var firstname=document.getElementById("firstname").value
+			var secondname=document.getElementById("secondname").value
+				for(firstname=0;firstname<secondname;firstname++)
+				{
+					alert(firstname);
+				}
+					if(firstname>secondname)
+					{
+						alert(secondname);
+					}
+					else
+					{
+						alert("please enter small number");
+					}
+		}
+  </script>
+ </head>
+
+ <body>
+  First Name:<input type="text" id="firstname"><br> 
+  Second Name:<input type="text" id="secondname"><br>
+  <input type="button" value="test" onclick="decrement()">
+ </body>
+</html>

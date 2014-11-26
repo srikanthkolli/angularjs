@@ -1,0 +1,8 @@
+<div ng-controller='LoginScreenController'>
+				<h3 ng-bind="loginmessages" ng-show="loginmessages!=''"></h3>
+			 <form action='' method='post' name='UserLoginForm' novalidate>
+ 				<label>Enter your email address: </label><input type='email' name='user_email' ng-model='logindata.user_email' ng-pattern='/\S+@\S+\.\S+/' required>
+				<label>Enter password: </label><input type='password' required ng-model='logindata.user_pass' name="user_password">
+				<input type='button' ng-click="submitFormData()" value="Submit">
+			 </form>
+		 </div>

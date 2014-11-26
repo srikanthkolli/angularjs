@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function function1()
+  {
+	  
+	  if(document.getElementById("country").options[document.getElementById("country").selectedIndex].value=='select')
+	  {
+		  alert("Please select any country");
+		  }
+	  if(document.getElementById("country").options[document.getElementById("country").selectedindex].value=='india')
+		  {
+			  alert("select india");
+
+			  }
+	 //if(document.getElementById("country").options[document.getElementById("country").selectedindex].value='usa')
+			  //{
+				  
+					//alert("select usa");
+
+				//}
+				  //if(document.getElementById("country").options[document.getElementById("country").selectedindex].value='uk')
+				  //{
+					  //alert("select uk");
+
+					  //}
+					  //if(document.getElementById("country").options[document.getElementById().selectedIndex].value='australia')
+					  //{
+						  //alert("select australia");
+						  //}
+						  
+							
+
+
+  }
+  </script>
+
+ </head>
+
+ <body>
+ <select id="country">
+	<option value="select">-Select-</option>
+	<option value="india">INDIA</option>
+	<option value="usa">USA</option>
+	<option value="uk">UK</option>
+	<option value="australia">AUSTRALIA</option>
+ </select>
+ <input type="button" value="Click" onclick="function1()">
+ </body>
+</html>

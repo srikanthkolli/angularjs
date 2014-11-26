@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html >
+<head>
+ <script src="angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+
+ </head>
+<body ng-app="OnePageApp">
+<div class='container'>
+		<div><a href='#/login'>Login</a> | <a href='#/signup'>Sign Up</a></div>
+		<div ng-view></div>
+ </div>
+ <script>
+	  angular.module('OnePageApp', ['ngRoute']).config(['$routeProvider', function($routeProvider){
+		$routeProvider.
+		  when('/login', {
+			templateUrl: 'templates/loginTemplate.html',
+			controller: 'LoginScreenController'
+		  }).
+		  when('/signup', {
+			templateUrl: 'templates/signUpTemplate.html',
+			controller: 'SignUpScreenController'
+		  }).
+		  otherwise({
+			 templateUrl: 'templates/loginTemplate.html',
+			 controller: 'LoginScreenController'
+		  });
+	}]).controller("SignUpScreenController", function($scope, $http, $location, messageService){
+		var signupdata = {'user_name':'', 'user_email':''};
+		$scope.submitFormData = function(){
+ 					if($scope.UserSignUpForm.user_name.$valid == false){
+						alert("Invalid name");
+						return false;
+					}else if($scope.UserSignUpForm.user_email.$error.pattern  == true || $scope.UserSignUpForm.user_email.$error.required == true){
+						alert("Invalid email");
+						return false;
+					}else{
+ 						$http.post('angular-ajax.php', {action:'signUpFunc', data:{user_name:$scope.UserSignUpForm.user_name.$viewValue, user_email:$scope.UserSignUpForm.user_email.$viewValue}}).
+						  success(function(data, status, headers, config) {
+							if(data=='success'){
+								messageService.set('Your details has been successfully submitted. Please login here');
+								$location.path('/login');
+							}else
+								alert('Something went wrong');
+						  }).
+						  error(function(data, status, headers, config) {
+							 
+						  });
+					}
+			}
+	 }).controller('LoginScreenController', function($scope, messageService){
+		$scope.loginmessages = messageService.get();
+		 $scope.submitFormData = function(){
+  					if($scope.UserLoginForm.user_email.$error.pattern == true || $scope.UserLoginForm.user_email.$error.required == true){
+						alert("Please enter your email");
+						return false;
+					}else if($scope.UserLoginForm.user_password.$valid  == false){
+						alert("Please enter password");
+						return false;
+					}
+			}
+	 
+	 }).factory('messageService', function() {
+					 var savedData = '';
+					 function set(data) {
+					   savedData = data;
+					 }
+					 function get() {
+					  return savedData;
+					 }
+					 return {
+						set: set,
+						get: get
+					 }
+				});
+</script>
+</body>
+
+</html

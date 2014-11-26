@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function function1(){
+	  var mystring=new Array("a","b","c","d","e");
+	  var myname=new Array();
+	  var len=mystring.length;
+	  for(i=0;i<5;i++){
+		   myname[i]=mystring[(len - 1)-i];
+	  }
+	  alert(myname);
+  }
+  </script>
+ </head>
+
+ <body>
+  <input type="button" value="click" onclick="function1()">
+ </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <canvas id="mycanvas" width="500" height="200px" style="border:1px solid red;">
+  </canvas>
+  <script>
+	var a=document.getElementById("mycanvas");
+	var context=a.getContext("2d");
+	context.fillStyle="green";
+	context.fillRect(0,0,200,50);
+
+	context.beginPath();
+	context.lineWidth="5";
+	context.strokeStyle="red";
+	context.moveTo(20,50);
+	context.lineTo(20,100);
+	context.stroke();
+
+	context.beginPath();
+	context.lineWidth="5";
+	context.strokeStyle="red";
+	context.moveTo(180,50);
+	context.lineTo(180,100);
+	context.stroke();
+  </script>
+ </HEAD>
+
+ <BODY>
+  
+ </BODY>
+</HTML>

@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+	p:first-line{
+		font-variant:small-caps;
+		color:blue;
+	}
+  </style>
+ </HEAD>
+
+ <BODY>
+  <p>You can use the :first-line pseudo-element to add a special effect to the first line of a text.You can use the :first-line pseudo-element to add a special effect to the first line of a text.You can use the :first-line pseudo-element to add a special effect to the first line of a text.</p>
+ </BODY>
+</HTML>

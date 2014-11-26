@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+ </HEAD>
+
+ <BODY>
+  <canvas id="myCanvas" width="578" height="200"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      // butt line cap (top line)
+      context.beginPath();
+      context.moveTo(200, canvas.height / 2 - 50);
+      context.lineTo(canvas.width - 200, canvas.height / 2 - 50);
+      context.lineWidth = 20;
+      context.strokeStyle = '#0000ff';
+      context.lineCap = 'butt';
+      context.stroke();
+
+      // round line cap (middle line)
+      context.beginPath();
+      context.moveTo(200, canvas.height / 2);
+      context.lineTo(canvas.width - 200, canvas.height / 2);
+      context.lineWidth = 20;
+      context.strokeStyle = '#0000ff';
+      context.lineCap = 'round';
+      context.stroke();
+
+      // square line cap (bottom line)
+      context.beginPath();
+      context.moveTo(200, canvas.height / 2 + 50);
+      context.lineTo(canvas.width - 200, canvas.height / 2 + 50);
+      context.lineWidth = 20;
+      context.strokeStyle = '#0000ff';
+      context.lineCap = 'square';
+      context.stroke();
+    </script>
+ </BODY>
+</HTML>

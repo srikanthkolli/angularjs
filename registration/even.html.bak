@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+	function number()
+	{
+		var val=document.getElementById("value").value;
+		if(val%2==0)
+		{
+			alert("please enter "+val+" even number");
+			
+			document.getElementById("value").value="";
+			}
+			else if(isNaN(val))
+			{
+				alert("please enter numbers");
+				document.getElementById("value").value="";
+				}
+			else
+			{
+				alert("given is "+val+" odd number");
+				document.getElementById("value").value="";
+				}
+		}
+		
+  </script>
+ </head>
+
+ <body>
+  Enter any numbers:<input type="text" id="value"><input type="button" value="Click" onclick="number()">
+ </body>
+</html>

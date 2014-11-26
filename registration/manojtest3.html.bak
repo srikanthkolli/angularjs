@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function function1(){
+	  r1=document.getElementById("male").checked;
+	  r2=document.getElementById("female").checked;
+	  if(r1==false && r2==false){
+		  alert("please select your gender");
+		  return;
+	  }
+	  if(document.getElementById("country").options[document.getElementById("country").selectedIndex].value=="select"){
+		  alert("please select country");
+		  return;
+	  }
+	  valid=false;
+	  for(i=0;i<document.getElementById("language").options.length;i++){
+		  valid=true;
+		  if(document.getElementById("language").options[i].selected){
+		  }
+	  }
+  }
+  </script>
+ </head>
+
+ <body>
+	<select id="country">
+		<option value="select">Select</option>
+		<option value="india">India</option>
+		<option value="usa">Usa</option>
+		<option value="uk">uk</option>
+	</select>
+	<select id="language" multiple>
+		<option value="english">English</option>
+		<option value="tamil">Tamil</option>
+		<option value="telugu">Telugu</option>
+		<option value="hindi">Hindi</option>
+	</select>
+	<input type="radio" value="male" name="user" id="male">Male
+	<input type="radio" value="female" name="user" id="female">Female
+	<input type="button" value="Click" onclick="function1()">
+ 
+ </body>
+</html>

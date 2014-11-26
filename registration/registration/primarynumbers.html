@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function function1(){
+
+		var a=document.getElementById("number").value;
+		var x = " is a prime number";
+		for(i=2; i<a; i++){
+		if(a%i ==0){
+        x = " is a not a prime number";
+		break;
+    }
+	
+}
+alert(a+x);
+  }
+  </script>
+ </head>
+
+ <body>
+  <input type="text" id="number">
+  <input type="button" value="Click" onclick="function1()">
+ </body>
+</html>

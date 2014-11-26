@@ -1,0 +1,602 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+	   function IsNumeric(evt)
+       {
+          var charCode=(evt.which)?evt.which:event.keyCode;
+          if (charCode > 47 && charCode < 58)
+             return true;
+			else
+          return false;
+       }
+	   function onlyAlphabets(e, t) {
+	try {
+	   
+	   if (e) {
+		  var charCode = e.which;
+	   }
+       else { return true; }
+       if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
+			  return true;
+			else
+			  return false;
+	   }
+			catch (err) {
+				alert(err.Description);
+			}
+
+    }
+	
+	
+  
+  function function1(){
+	  var a=document.getElementById("name1").value;
+	  var b=document.getElementById("name2").value;
+	  var e=document.getElementById("email").value;
+	  var s=document.getElementById("ssn").value;
+	  var d=document.getElementById("dob").value;
+	  var l=document.getElementById("dl").value;
+	  var r1=document.getElementById("yes1").checked;
+	  var r2=document.getElementById("no1").checked;
+	  var p=document.getElementById("phone").value;
+	  var l1=document.getElementById("line1").value;
+	  var l2=document.getElementById("line2").value;
+	  var c=document.getElementById("city").value;
+	  var z=document.getElementById("code").value;
+	  var y=document.getElementById("year").value;
+	  var m=document.getElementById("month").value;
+	  var e1=document.getElementById("employ1").value;
+	  var e2=document.getElementById("employ2").value;
+	  var r3=document.getElementById("yes2").checked;
+	  var r4=document.getElementById("no2").checked;
+	  var r5=document.getElementById("yes3").checked;
+	  var r6=document.getElementById("no3").checked;
+	  var e3=document.getElementById("employ3").value;
+	  var e4=document.getElementById("employ4").value;
+	  var n=document.getElementById("net").value;
+	  var e5=document.getElementById("employ5").value;
+	  var e6=document.getElementById("employ6").value;
+	  var r7=document.getElementById("yes4").checked;
+	  var r8=document.getElementById("no4").checked;
+	  var e7=document.getElementById("employ7").value;
+	  var e8=document.getElementById("employ8").value;
+	  var r9=document.getElementById("yes5").checked;
+	  var r10=document.getElementById("no5").checked;
+	  var l3=document.getElementById("limit").value;
+	  var r11=document.getElementById("yes6").checked;
+	  var r12=document.getElementById("no6").checked;
+	  var nameRegex = /^[a-zA-Z\-]+$/;
+	  var re=/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	  if(a==""){
+		  alert("please enter your name");
+		  document.getElementById("name1").focus();
+		  return;
+	  }
+	  if(nameRegex.test(a)==false){
+		  alert("invalid your name");
+		  document.getElementById("name1").focus();
+		  return;
+	  }
+	  if(b==""){
+		  alert("please enter your last name");
+		  document.getElementById("name2").focus();
+		  return;
+	  }
+	  if(nameRegex.test(b)==false){
+		  alert("invalid your last name");
+		  document.getElementById("name2").focus();
+		  return;
+	  }
+	  if(e==""){
+		  alert("please enter your email");
+		  document.getElementById("email").focus();
+		  return;
+	  }
+	  if(re.test(e)==false){
+		  alert("invalid email");
+		  document.getElementById("email").focus();
+		  return;
+	  }
+	  if(s==""){
+		  alert("please enter ssn");
+		  document.getElementById("ssn").focus();
+		  return;
+	  }
+	  if(isNaN(s)){
+		  alert("invalid ssn");
+		  document.getElementById("ssn").focus();
+		  return;
+	  }
+	   if(d==""){
+		  alert("please enter your date of birth");
+		  document.getElementById("dob").focus();
+		  return;
+	  }
+	  if(l==""){
+		  alert("please enter your dl number");
+		  document.getElementById("dl").focus();
+		  return;
+	  }
+	  if(isNaN(l)){
+		  alert("invalid dl number");
+		  document.getElementById("dl").focus();
+		  return;
+	  }
+	 
+	  if(r1==false && r2==false){
+		  alert("please select your Savings Account");
+		  return;
+	  }
+	  if(p==""){
+		  alert("please enter your Primary Phone");
+		  document.getElementById("phone").focus();
+		  return;
+	  }
+	  if(isNaN(p)){
+		  alert("invalid Primary Phone");
+		  document.getElementById("phone").focus();
+		  return;
+	  }
+	  if(document.getElementById("type").options[document.getElementById("type").selectedIndex].value=="select"){
+		  alert("please select your Primary Phone Type");
+		  return;
+	  }
+	  if(l1==""){
+		  alert("please enter your address line1");
+		  document.getElementById("line1").focus();
+		  return;
+	  }
+	  if(l2==""){
+		  alert("please enter your address line2");
+		  document.getElementById("line2").focus();
+		  return;
+	  }
+	  if(c==""){
+		  alert("please enter your city");
+		  document.getElementById("city").focus();
+		  return;
+	  }
+	  if(nameRegex.test(c)==false){
+		  alert("invalid city");
+		  document.getElementById("city").focus();
+		  return;
+	  }
+	  if(document.getElementById("state").options[document.getElementById("state").selectedIndex].value=="select"){
+		  alert("please select your state");
+		  return;
+	  }
+	  if(z==""){
+		  alert("please enter your zipcode");
+		  document.getElementById("code").focus();
+		  return;
+	  }
+	  if(isNaN(z)){
+		  alert("invalid zipcode");
+		  document.getElementById("code").focus();
+		  return;
+	  }
+	  if(y==""){
+		  alert("please enter your Number of Years at Previous Address");
+		  document.getElementById("year").focus();
+		  return;
+	  }
+	  if(isNaN(y)){
+		  alert("invalid Number of Years at Previous Address");
+		  document.getElementById("year").focus();
+		  return;
+	  }
+	  if(m==""){
+		  alert("please enter your Number of Months at Previous Address");
+		  document.getElementById("month").focus();
+		  return;
+	  }
+	  if(isNaN(m)){
+		  alert("invalid Number of Months at Previous Address");
+		  document.getElementById("month").focus();
+		  return;
+	  }
+	  if(e1==""){
+		  alert("please enter Current Employer Name");
+		  document.getElementById("employ1").focus();
+		  return;
+	  }
+	  if(nameRegex.test(e1)==false){
+		  alert("invalid Current Employer Name");
+		  document.getElementById("employ1").focus();
+		  return;
+	  }
+	  if(e2==""){
+		  alert("please enter your Current Employer Telephone");
+		  document.getElementById("employ2").focus();
+		  return;
+	  }
+	  if(isNaN(e2)){
+		  alert("invalid Current Employer Telephone");
+		  document.getElementById("employ2").focus();
+		  return;
+	  }
+	  if(r3==false && r4==false){
+		  alert("please select Currently Self-Employed");
+		  return;
+	  }
+	  if(r5==false && r6==false){
+		  alert("please select Currently Retired");
+		  return;
+	  }
+	  if(e3==""){
+		  alert("please enter Number of Years in Current Employer");
+		  document.getElementById("employ3").focus();
+		  return;
+	  }
+	  if(isNaN(e3)){
+		  alert("invalid Number of Years in Current Employer");
+		  document.getElementById("employ3").focus();
+		  return;
+	  }
+	  if(e4==""){
+		  alert("please enter Number of Months in Current Employer");
+		  document.getElementById("employ4").focus();
+		  return;
+	  }
+	  if(isNaN(e4)){
+		  alert("invalid Number of Months in Current Employer");
+		  document.getElementById("employ4").focus();
+		  return;
+	  }
+	  if(n==""){
+		  alert("please enter Monthly Net Income");
+		  document.getElementById("net").focus();
+		  return;
+	  }
+	  if(isNaN(n)){
+		  alert("invalid Monthly Net Income");
+		  document.getElementById("net").focus();
+		  return;
+	  }
+	  if(e5==""){
+		  alert("please enter Previous Employer Name");
+		  document.getElementById("employ5").focus();
+		  return;
+	  }
+	  if(nameRegex.test(e5)==false){
+		  alert("invalid Previous Employer Name");
+		  document.getElementById("employ5").focus();
+		  return;
+	  }
+	  if(e6==""){
+		  alert("please enter Previous Employer's Phone");
+		  document.getElementById("employ6").focus();
+		  return;
+	  }
+	  if(isNaN(e6)){
+		  alert("invalid Previous Employer's Phone");
+		  document.getElementById("employ6").focus();
+		  return;
+	  }
+	  if(r7==false && r8==false){
+		  alert("please select Previous Employer Retired");
+		  return;
+	  }
+	  if(e7==""){
+		  alert("please enter Number of Years with Previous Employer");
+		  document.getElementById("employ7").focus();
+		  return;
+	  }
+	  if(isNaN(e7)){
+		  alert("invalid Number of Years with Previous Employer");
+		  document.getElementById("employ7").focus();
+		  return;
+	  }
+	  if(e8==""){
+		  alert("please enter Number of Months with Previous Employer");
+		  document.getElementById("employ8").focus();
+		  return;
+	  }
+	  if(isNaN(e8)){
+		  alert("invalid Number of Months with Previous Employer");
+		  document.getElementById("employ8").focus();
+		  return;
+	  }
+	  if(r9==false && r10==false){
+		  alert("please select Previous Employer Self-Employed");
+		  return;
+	  }
+	  if(l3==""){
+		  alert("please enter Requested Credit Limit");
+		  document.getElementById("limit").focus();
+		  return;
+	  }
+	  if(isNaN(l3)){
+		  alert("invalid Requested Credit Limit");
+		  document.getElementById("limit").focus();
+		  return;
+	  }
+	  if(r11==false && r12==false){
+		  alert("please select Agree to Terms");
+		  return;
+	  }
+  }
+  </script>
+ </head>
+
+ <body>
+  <table border="0" cellspacing="0" cellpadding="10" width="350px" align="center">
+	<tr>
+		<td colspan="2"><b><font color="#66cccc">Applicant Information</font></b></td>
+	</tr>
+	<tr>
+		<td align="right">First Name<font color="#66cccc">*</font></td>
+		<td>
+			<input type="text" id="name1" onkeypress="return onlyAlphabets(event,this)">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Last Name<font color="#66cccc">*</font></td>
+		<td>
+			<input type="text" id="name2" onkeypress="return onlyAlphabets(event,this)">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Email Address<font color="#66cccc">*</font></td>
+		<td>
+			<input type="text" id="email">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">SSN<font color="#66cccc">*</font></td>
+		<td>
+			<input type="text" id="ssn" onkeypress="return IsNumeric(event)" maxlength="10">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Date of Birth<font color="#66cccc">*</font></td>
+		<td>
+			<input type="text" id="dob">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">DL Number</td>
+		<td>
+			<input type="text" id="dl" onkeypress="return IsNumeric(event)" maxlength="10">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Savings Account</td>
+		<td>
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<input type="radio" name="user" value="manoj" id="yes1">Yes
+					</td>
+					<td>
+						<input type="radio" name="user" value="manoj" id="no1">No
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Primary Phone<font color="#66cccc">*</font></td>
+		<td>
+			<input type="text" id="phone" onkeypress="return IsNumeric(event)" maxlength="10">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Primary Phone Type<font color="#66cccc">*</font></td>
+		<td>
+			<select id="type" style="width:78%">
+				<option value="select">Select</option>
+				<option value="home">Home</option>
+				<option value="mobile">Mobile</option>
+				<option value="pager">Pager</option>
+				<option value="other">Other</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><b><font color="#66cccc">Current Address Information</font></b></td>
+	</tr>
+	<tr>
+		<td align="right">Address Line 1<font color="#66cccc">*</font></td>
+		<td>
+			<input type="text" id="line1">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Address Line 2<font color="#66cccc">*</font></td>
+		<td>
+			<input type="text" id="line2">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">City<font color="#66cccc">*</font></td>
+		<td>
+			<input type="text" id="city" onkeypress="return onlyAlphabets(event,this)">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">State<font color="#66cccc">*</font></td>
+		<td>
+			<select id="state" style="width:78%">
+				<option value="select">Select a State</option>
+				<option value="tamil">Tamilnadu</option>
+				<option value="andra">Andhra pradesh</option>
+				<option value="kar">Karnataka</option>
+				<option value="maha">Maharashtra</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Zipcode<font color="#66cccc">*</font></td>
+		<td>
+			<input type="text" id="code" onkeypress="return IsNumeric(event)" maxlength="10">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Number of Years at<font color="#66cccc">*</font> <br> Previous Address</td>
+		<td>
+			<input type="text" id="year" onkeypress="return IsNumeric(event)" maxlength="2">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Number of Months at<font color="#66cccc">*</font> <br> Previous Address</td>
+		<td>
+			<input type="text" id="month" onkeypress="return IsNumeric(event)" maxlength="2">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><b><font color="#66cccc">Current Employer Information</font></b></td>
+	</tr>
+	<tr>
+		<td align="right">Current Employer Name<font color="#66cccc">*</font></td>
+		<td>
+			<input type="text" id="employ1" onkeypress="return onlyAlphabets(event,this)">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Current Employer<font color="#66cccc">*</font> <br> Telephone</td>
+		<td>
+			<input type="text" id="employ2" onkeypress="return IsNumeric(event)" maxlength="10">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Currently Self-Employed?<font color="#66cccc">*</font></td>
+		<td>
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<input type="radio" value="manoj" name="yes" id="yes2">Yes
+					</td>
+					<td>
+						<input type="radio" value="manoj" name="yes" id="no2">No
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Currently Retired?<font color="#66cccc">*</font></td>
+		<td>
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<input type="radio" value="manoj" name="no" id="yes3">Yes
+					</td>
+					<td>
+						<input type="radio" value="manoj" name="no" id="no3">No
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Number of Years in<font color="#66cccc">*</font> <br> Current Employer</td>
+		<td>
+			<input type="text" id="employ3" onkeypress="return IsNumeric(event)" maxlength="2">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Number of Months in<font color="#66cccc">*</font> <br> Current Employer</td>
+		<td>
+			<input type="text" id="employ4" onkeypress="return IsNumeric(event)" maxlength="2">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Monthly Net Income<font color="#66cccc">*</font></td>
+		<td>
+			<input type="text" id="net" onkeypress="return IsNumeric(event)" maxlength="10">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><b><font color="#66cccc">Previous Employer Information</font></b></td>
+	</tr>
+	<tr>
+		<td align="right">Previous Employer Name<font color="#66cccc">*</font></td>
+		<td>
+			<input type="text" id="employ5" onkeypress="return onlyAlphabets(event,this)">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Previous Employer's<font color="#66cccc">*</font> <br> Phone</td>
+		<td>
+			<input type="text" id="employ6" onkeypress="return IsNumeric(event)" maxlength="10">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Previous Employer<font color="#66cccc">*</font> <br> Retired</td>
+		<td>
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<input type="radio" value="manoj" name="yes1" id="yes4">Yes
+					</td>
+					<td>
+						<input type="radio" value="manoj" name="yes1" id="no4">No
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Number of Years with<font color="#66cccc">*</font> <br> Previous Employer</td>
+		<td>
+			<input type="text" id="employ7" onkeypress="return IsNumeric(event)" maxlength="2">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Number of Months with<font color="#66cccc">*</font> <br> Previous Employer</td>
+		<td>
+			<input type="text" id="employ8" onkeypress="return IsNumeric(event)" maxlength="2">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Previous Employer<font color="#66cccc">*</font> <br> Self-Employed</td>
+		<td>
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<input type="radio" value="manoj" name="no1" id="yes5">Yes
+					</td>
+					<td>
+						<input type="radio" value="manoj" name="no1" id="no5">No
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Requested Credit Limit<font color="#66cccc">*</font></td>
+		<td>
+			<input type="text" id="limit" onkeypress="return IsNumeric(event)" maxlength="10">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Agree to Terms<font color="#66cccc">*</font></td>
+		<td>
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<input type="radio" value="manoj" name="yes2" id="yes6">Yes
+					</td>
+					<td>
+						<input type="radio" value="manoj" name="yes2" id="no6">No
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="right">
+			<input type="button" value="Process My Application" onclick="function1()">
+		</td>
+	</tr>
+  </table>
+ </body>
+</html>

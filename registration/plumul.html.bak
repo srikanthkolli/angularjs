@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+	ul li{
+		display:inline;
+		width:10%;
+		
+		border:none;
+	}
+	input[type="text"] { border: 1px solid red; }
+	.div{
+		text-decoration:none;
+	}
+  </style>
+ </HEAD>
+
+ <BODY>
+  <div>
+	<ul class="div" style="text-decoration:none;">
+		<li>Drain</li>
+		<li>Residential</li>
+		<li>Commercial</li>
+		<li>24/7Emergency</li>
+	</ul>
+  </div>
+  <div >
+	<input type="text">
+  </div>
+ </BODY>
+</HTML>

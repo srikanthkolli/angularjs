@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+	img{
+		position:absolute;
+		left:0;
+		top:0;
+		z-index:-1;
+	}
+  </style>
+ </HEAD>
+
+ <BODY>
+  <h1>This is a heading.</h1>
+  <img src="boat.jpg">
+  <p>This is a paragraph imge using index.</p>
+   <p>This is a paragraph imge using index.</p>
+ </BODY>
+</HTML>

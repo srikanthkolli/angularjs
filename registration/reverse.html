@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function reverse(){
+	  var text="";
+	  var number=document.getElementById("rev").value;
+	  for(i=0;i<=number.length;i++){
+		  text = number.substring(i,i+1)+text;
+	  }
+	  alert("Reverse number is "+text);
+  }
+  </script>
+ </head>
+
+ <body>
+  <input type="text" id="rev">
+  <input type="button" value="Click" onclick="reverse()">
+ </body>
+</html>

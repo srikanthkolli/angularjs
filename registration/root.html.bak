@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function function1(){
+	  var i=parseInt(document.getElementById("number").value);
+	  var j=parseInt(document.getElementById("no").value);
+	  var n=document.getElementById("value").value;
+	  mul=1;
+	  for(k=1;k<=n;k++){
+		  mul=mul*(i+j);
+		 
+	  }
+	   alert("sum is"+mul);
+  }
+  </script>
+ </head>
+
+ <body>
+  <input type="text" id="number"><br>
+  <input type="text" id="no">
+  <input type="text" id="value">
+  <input type="button" value="Click" onclick="function1()">
+ </body>
+</html>

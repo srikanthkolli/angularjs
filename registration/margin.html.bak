@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+	.para{
+		background-color:yellow;
+	}
+	.para1{
+		background-color:yellow;
+		margin-top:150px;
+		margin-right:50px;
+		margin-bottom:-50px;
+		margin-left:50px;
+	}
+  </style>
+ </HEAD>
+
+ <BODY>
+  <p class="para">This is a paragraph</p>
+  <p class="para1">This is a paragraph</p>
+ </BODY>
+</HTML>

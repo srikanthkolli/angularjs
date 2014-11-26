@@ -1,0 +1,2 @@
+What is Data Binding?
+ - Defining which parts of html should map to the which properties of the Javascript class.

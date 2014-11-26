@@ -1,0 +1,7 @@
+<div ng-controller='SignUpScreenController'>
+			 <form action='' method='post' name='UserSignUpForm' novalidate>
+				<label>Enter your name: </label><input type='text' name='user_name' ng-model='signupdata.user_name' required>
+				<label>Enter your email address: </label><input type='email' name='user_email' ng-model='signupdata.user_email' ng-pattern='/\S+@\S+\.\S+/' required>
+				<input type='button' ng-click="submitFormData()" value="Submit">
+			 </form>
+		 </div>

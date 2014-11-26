@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function function1()
+  {
+	data='';
+	for(i=1;i<5;i++)
+	{
+		var hob=document.getElementById("hobbies"+i).checked;
+		var val=document.getElementById("hobbies"+i).value;
+			if(hob==true)
+			{
+				if(data==''){
+					data=val;
+				}
+				else{
+					data=data+","+val;
+				}
+			}
+
+		
+	}
+		
+			if(data=='')
+			{
+			alert("please select atleast one");
+			}
+				else
+				{
+			
+			alert(data);
+			}
+			
+  }
+
+  </script>
+ </head>
+
+ <body>
+  <input type="checkbox" id="hobbies1" value="tv">Tv
+  <input type="checkbox" id="hobbies2" value="games">Games
+  <input type="checkbox" id="hobbies3" value="music">Music
+  <input type="checkbox" id="hobbies4" value="read">Read
+  <input type="button" value="Click" onclick="function1()">
+ </body>
+</html>

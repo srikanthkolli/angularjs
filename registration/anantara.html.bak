@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+	@font-face{
+		font-family:myfirstfont;
+		src:url('Impressum-Roman.otf');
+	}
+	
+
+  </style>
+ </HEAD>
+
+ <BODY>
+ <div style="width:980px;">
+ <div style="height:100px;border:1 px solid black;">
+	<div style="width:50%;float:left;height:100px;border:1 px solid red;">
+		<div>
+			<img src="img/logo.png" width="30%" height="93px" style="margin-left:60px;">
+		</div>
+	</div>
+	<div style="width:48%;float:left;height:100px;border:1 px solid red;">
+		<div style="width:100%;height:100px;background-image:url(img/phone.png);background-repeat:no-repeat;margin-top:52px;">
+		</div>
+	</div>
+ </div>
+ <div style="height:280px;border:1 px solid green;">
+	<div>
+		<img src="img/banner.png" width="100%" height="260px">
+	</div>
+	<div style="border:1 px solid red;width:5%;height:20px;">
+		<img src="img/slide_bg.png" width="100%" height="20px;" style="margin-top: -21px;margin-left: 136px;">
+		
+	</div>
+ </div>
+
+  <div style="height:1000px;border:1 px solid red;">
+	<div style="width:50%;height:1000px;border:1 px solid black;float:left;">
+		<div style="height:40px;border:1 px solid green;">
+			<div style="width:100%;height:40px;background-image:url(img/title_bg.png);background-repeat:no-repeat;">
+			</div>
+			<div style="margin-top:-31px;margin-left:55px;font-size:20px;color:white;">Bali Haven Package
+			</div>
+			<div style="height:200px;border:1 px solid red;margin-top:9px;">
+				<div style="height:200px;width:50%;border:1 px solid black;float:left;">
+					<div style="width:100%;height:180px;background-image:url(img/image_1.png);background-repeat:no-repeat;">
+					</div>
+					<div style="background-image:url(img/zoom_image.png);background-repeat:no-repeat;width:35%;height:66px;margin-top: -109px;margin-left: 102px;">
+					</div>
+				</div>
+				<div style="height:200px;width:48%;border:1 px solid black;float:right;">
+					<div style="margin-left:25px;margin-top: 10px;"><span style="font-size:23px;text-decoration:line-through;color:orange;">$625</span><span style="font-size:28px;color:orange;">/$249</span> Total
+					</div>
+					<div>
+						<ul>
+							<li style="margin-top: -12px;">5 Days/4 Nights stay</li>
+							<li>1 Bedroom Deluxe Room</li>
+							<li>Daily Breckfast for 2 persons</li>
+							<li style="margin-right:-1px;">3rd & 4th person free(under 12)</li>
+						</ul>
+					</div>
+					<div style="margin-left:40px;margin-top:-18px;">or 1 Adult
+					</div>
+					<div style="margin-left:40px;">Tax included
+					</div>
+				</div>
+			</div>
+			<div style="height:40px;border:1 px solid green;margin-top:3px;">
+				<div style="height:40px;width:100%;background-image:url(img/title_bg.png);background-repeat:no-repeat;">
+				</div>
+				<div style="margin-top:-31px;margin-left:55px;font-size:20px;color:white;">Phuket Mai Khao Package
+				</div>
+				<div style="height:200px;border:1 px solid black;margin-top: 7px;">
+					<div style="width:50%;height:190px;border:1 px solid red;float:left;margin-top:7px;">
+						<div style="background-image:url(img/image_2_big.png);background-repeat:no-repeat;width:100%;height:190px;">
+						</div>
+						<div style="background-image:url(img/zoom_image.png);background-repeat:no-repeat;width:35%;height:66px;margin-top: -109px;margin-left: 116px;">
+						</div>
+					</div>
+					<div style="width:48%;height:190px;border:1 px solid red;float:right;margin-top:7px;">
+						<div style="margin-left:25px;margin-top: 10px;"><span style="font-size:23px;text-decoration:line-through;color:orange;">$1,000</span><span style="font-size:28px;color:orange;">/$349 </span>Total
+						</div>
+						<div>
+							<ul>
+								<li style="margin-top: -12px;">5 Days/4 Nights stay</li>
+								<li>1 Bedroom Suite</li>
+								<li>Daily Breckfast for 2 persons</li>
+								<li style="margin-right:-2px;">3rd & 4th person free(under 12)</li>
+							</ul>
+						</div>
+						<div style="margin-left:40px;margin-top:-18px;">or 1 Adult
+						</div>
+						<div style="margin-left:40px;">Tax included
+						</div>
+					</div>
+				</div>
+				<div style="height:40px;border:1 px solid black;margin-top:6px;">
+					<div style="height:40px;width:100%;background-image:url(img/title_bg.png);background-repeat:no-repeat;">
+					</div>
+					<div style="margin-top:-31px;margin-left:55px;font-size:20px;color:white;">Phuket & Bali Combo
+					</div>
+					<div style="height:200px;border:1 px solid red;margin-top:7px;">
+						<div style="font-size:25px;margin-left:46px;color:orange;">The Ulitimate Luxury Experience
+						</div>
+						<div style="font-size:25px;margin-left:101px;"><span style="font-size:23px;text-decoration:line-through;color:orange;">$1500</span><span style="font-size:28px;color:orange;">/$598</span><span style="font-size:16px;"> Total</span>
+						</div>
+						<div>
+							<ul>
+								<li>5 Days/4 nights stay at Bali Haven(1 Bedroom Deluxe Room)</li>
+								<li>5 Days/4 nights stay at Phuket Mai Khao(1 Bedroom Suite)</li>
+								<li>Daily Breckfast for 2 persons</li>
+								<li>3rd & 4th person free(under 12)or adult</li>
+							</ul>
+						</div>
+						<div style="margin-top:-14px;margin-left:37px;">Tax included
+						</div>
+					</div>
+					<div style="border:1 px solid red;height:30px;">
+					</div>
+					<div style="border:1 px solid black;height:60px;">
+						<div style="border:1 px solid red;height:40px;width:60%;float:left;">
+							<div style="margin-left:10px;font-size:22px;">"One of best hotel in the world"
+							</div>
+						</div>
+						<div style="border:1 px solid red;height:40px;width:38%;float:right;">
+							<div style="height:30px;width:18%;border:1 px solid blue;float:left;background-image:url(img/yellow_star.png);background-repeat:no-repeat;">
+							</div>
+							<div style="height:30px;width:18%;border:1 px solid blue;float:left;background-image:url(img/yellow_star.png);background-repeat:no-repeat;margin-left:-10px;">
+							</div>
+							<div style="height:30px;width:18%;border:1 px solid blue;float:left;background-image:url(img/yellow_star.png);background-repeat:no-repeat;margin-left:-10px;">
+							</div>
+							<div style="height:30px;width:18%;border:1 px solid blue;float:left;background-image:url(img/yellow_star.png);background-repeat:no-repeat;margin-left:-10px;">
+							</div>
+							<div style="height:30px;width:18%;border:1 px solid blue;float:left;background-image:url(img/yellow_star.png);background-repeat:no-repeat;margin-left:-10px;">
+							</div>
+						</div>
+					</div>
+					<div style="height:115px;border:1 px solid red;">
+						<div style="margin-left:10px;">We are currectly staying at Anantra Seminyak Hotel.we arrived two days ago
+						</div>
+						<div style="margin-left:10px;">We are currectly staying at Anantra Seminyak Hotel.we arrived two days ago
+						</div>
+						<div style="margin-left:10px;">We are currectly staying at Anantra Seminyak Hotel.we arrived two days ago
+						</div>
+						<div style="margin-left:10px;">We are currectly staying at Anantra Seminyak Hotel.we arrived two days ago
+						</div>
+						<div style="margin-left:10px;">We are currectly staying at Anantra Seminyak Hotel.
+						</div>
+					</div>
+					<div style="border:1 px solid green;height:40px;">
+						<div style="margin-left:10px;margin-top:13px;">-Jenny H,Sydney,Australia
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<div style="width:48%;height:1000px;border:1 px solid green;float:right;">
+		<div style="height:60px;border:1 px solid red;background-image:url(img/oranage_bg.png);">
+			<div style="font-size: 35px;margin-left: 25px;margin-top: 0px;color:white;">Exclusive Package
+			</div>
+		</div>
+		<div style="border:1 px solid green;height:115px;background-image:url(img/oranage_bg.png);color:white;">
+			<div style="margin-left:10px;">We are currectly staying at Anantra Seminyak Hotel.we arrived two days
+			</div>
+			<div style="margin-left:10px;">We are currectly staying at Anantra Seminyak Hotel.we arrived two days
+			</div>
+			<div style="margin-left:10px;">We are currectly staying at Anantra Seminyak Hotel.we arrived two days
+			</div>
+			<div style="margin-left:10px;">We are currectly staying at Anantra Seminyak Hotel.we arrived two days
+			</div>
+			<div style="margin-left:10px;">We are currectly
+			</div>
+		</div>
+		<div style="height:40px;border:1 px solid red;background-image:url(img/oranage_bg.png);">
+			<div>
+				<input type="text" placeholder="*First Name" style="margin-top:10px;margin-left:10px;width:420px;">
+			</div>
+		</div>
+		<div style="height:40px;border:1 px solid red;background-image:url(img/oranage_bg.png);">
+			<div>
+				<input type="text" placeholder="*Last Name" style="margin-top:10px;margin-left:10px;width:420px;">
+			</div>
+		</div>
+		<div style="height:40px;border:1 px solid red;background-image:url(img/oranage_bg.png);">
+			<div>
+				<input type="text" placeholder="*Email" style="margin-top:10px;margin-left:10px;width:420px;">
+			</div>
+		</div>
+		<div style="height:40px;border:1 px solid red;background-image:url(img/oranage_bg.png);">
+			<div>
+				<input type="text" placeholder="*Phone Number eg:(0123456789)" style="margin-top:10px;margin-left:10px;width:420px;">
+			</div>
+		</div>
+		<div style="border:1 px solid green;height:30px;background-image:url(img/oranage_bg.png);color:white;">
+			<div style="width:60%;height:25px;border:1 px solid red;float:left;background-image:url(img/oranage_bg.png);">
+				<div style="margin-left:10px;">*Travel with Chirldren
+				</div>
+			</div>
+			<div style="width:38%;height:25px;border:1 px solid red;float:right;background-image:url(img/oranage_bg.png);">
+				<div style="float:left;"><input type="radio" name="user">Yes
+				</div>
+				<div style="float:left;margin-left: 19px;"><input type="radio" name="user">No
+				</div>
+			</div>
+		</div>
+		<div style="height:40px;border:1 px solid black;background-image:url(img/oranage_bg.png);color:white;">
+			<div style="margin-left:10px;background-image:url(img/oranage_bg.png);">What activities do you enjoy on holiday?
+			</div>
+		</div>
+		<div style="height:80px;border:1 px solid black;background-image:url(img/oranage_bg.png);">
+			<div style="margin-left:10px;background-image:url(img/oranage_bg.png);"><textarea rows="3" cols="50"></textarea>
+			</div>
+		</div>
+		<div style="height:100px;border:1 px solid red;background-image:url(img/oranage_bg.png);">
+			<div style="margin-left:10px;width:100%;height:100px;background-image:url(img/make_a_reservation_bt.png);background-repeat:no-repeat;">
+			</div>
+		</div>
+		<div style="height:80px;border:1 px solid black;background-image:url(img/oranage_bg.png);color:white;">
+			<div style="margin-left:10px;">We are currectly staying at Anantra Seminyak Hotel.we arrived two days
+			</div>
+			<div style="margin-left:10px;">We are currectly staying at Anantra Seminyak Hotel.we arrived two days
+			</div>
+			<div style="margin-left:10px;">at Anantra Seminyak Hotel.
+			</div>
+		</div>
+		<div style="height:100px;border:1 px solid black;">
+			<div style="margin-top:10px;margin-left:10px;">We are currectly staying at Anantra Seminyak Hotel.we arrived two days
+			</div>
+			<div style="margin-left:10px;">We are currectly staying at Anantra Seminyak Hotel.we arrived two days
+			</div>
+			<div style="margin-left:10px;">at Anantra Seminyak Hotel.
+			</div>
+		</div>
+		<div style="height:150px;border:1 px solid red;">
+			<div style="height:150px;width:35%;border:1 px solid black;float:left;">
+				<div style="background-image:url(img/logo_1.png);background-repeat:no-repeat;margin-top:20px;width:100%;height:150px;;margin-left:10px;">
+				</div>
+			</div>
+			<div style="height:150px;width:35%;border:1 px solid black;float:left;">
+				<div style="background-image:url(img/logo_2.png);background-repeat:no-repeat;margin-top:10px;width:100%;height:150px;margin-left:10px;">
+				</div>
+			</div>
+			<div style="height:150px;width:28%;border:1 px solid black;float:left;">
+				<div style="background-image:url(img/logo_3.png);background-repeat:no-repeat;margin-top:10px;width:100%;height:150px;;margin-left:10px;">
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+  </div>
+  <div style="height:50px;border:1 px solid black;width:980px;">
+	<div style="background-image:url(img/footer_bg.png);width:980px;height:50px;">
+	</div>
+	<div style="margin-top:-34px;margin-left:242px;color:white;">@ 2012-2013 Avc Club Developer Limited All Rights Reserved./Privacy Policy
+	</div>
+  </div>
+ </BODY>
+</HTML>

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function function1()
+  {
+	  var i=parseInt(document.getElementById("number").value);
+	  var j=parseInt(document.getElementById("no").value);
+	  total=(i+j)*(i+j)*(i+j);
+	  alert("squer of the number"+total);
+  }
+  </script>
+ </head>
+
+ <body>
+  <input type="text" id="number">
+  <input type="text" id="no">
+  <input type="button" value="Click" onclick="function1()">
+ </body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style>
+  a {
+	color:white;
+	text-decoration:none;
+  }
+  .menu-div{
+	background-image:url(images/menu-bg.jpg);
+	background-size:100% 90%;
+	background-repeat:no-repeat;
+	height:80px;
+  }
+	.menu-bar li{
+		display:block;
+		float:left;
+		
+		color:white;
+	}
+	.menu-bar li a{
+		display: block;
+		padding: 0px 25px;
+		
+	}
+	.menu-bar li div{
+		width:130px;
+		display:block;
+		background-image:url(images/devider.jpg);
+		
+	}
+	.menu-bar{
+		padding-top:20px;
+	}
+	.no-border{
+
+		border:0px !important;	
+	}
+  </style>
+ </head>
+
+ <body style="margin:0;padding:0;">
+ <div style="height:81px;background-repeat:no-repeat;">
+	<div style="width:10%;float:left;background-image:url(images/top-rept.jpg);height:200px">
+	</div>
+	<div style="width:80%;float:left;background-image:url(images/top-rept.jpg);height:200px"> 
+		<div style="width:100%;background-image:url(images/header-top.jpg);height:80px;background-repeat:no-repeat;">
+			<div style="padding:20px 0px 0px 20px;"><span style="color:white;margin-left:100px;font-size:32px;">Company</span><span style="font-size:32px;"> Name</span></div>
+		</div>
+	</div>
+	<div style="width:10%;float:left;background-image:url(images/top-rept.jpg);height:200px">
+		
+	</div>
+ </div>
+ <div style="width:820px;margin-left:10%;position:absolute;border:5 px solid green;">
+	<div style="width:100%;background-image:url(images/header.jpg);background-size:100% 100%;height:200px;">
+		<div style="font-size: 21px;border: 1 px solid red;padding-top: 68px;padding-left: 22px;">
+			<b>Lorem Ipsum is simply dummy text<br>of the typesetting industry.</b>
+		</div>
+	</div>
+	<div class="menu-div">
+		 <ul class="menu-bar">
+			<li><a href="#" class="no-border">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">What's New</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Resource</a></li>
+			<li><a href="#">Links</a></li>
+		</ul>
+	</div>
+<div style="height:550px;border:1 px solid blue;font-size:15px;">
+	<div style="height:550px;float:left;border:1 px solid red;width:60%">
+		<div style="font-size:20px;font-weight:bold;">Welcome To<span style="color:green;"> Our Site</span></div>
+		<div style="height:10px;"></div>
+		<div>
+			Lorem ipsum is simply dummy text of the printing and typesetting industry.ipsum has been the
+			Lorem ipsum is simply dummy text of the printing and typesetting industry.ipsum has been the
+			Lorem ipsum is simply dummy text of the printing and typesetting industry.
+		</div>
+		<div style="height:10px;">
+		</div>
+		<div>
+			Lorem ipsum is simply dummy text of the printing and typesetting industry.ipsum has been the
+			Lorem ipsum is simply dummy text of the printing and typesetting industry.ipsum has been the
+		</div>
+		<div style="background-image:url(images/bullet.jpg);background-repeat:no-repeat;height:20px;margin-left:10px">
+			<div style="float:left;margin-left:20px;">
+				Lorem ipsum is simply dummy text of the printing and typesetting 
+			</div>
+		</div>
+		<div style="background-image:url(images/bullet.jpg);background-repeat:no-repeat;height:20px;margin-left:10px">
+			<div style="float:left;margin-left:20px;">
+				Lorem ipsum is simply dummy text of the printing and typesetting 
+			</div>
+		</div>
+		<div style="background-image:url(images/bullet.jpg);background-repeat:no-repeat;height:20px;margin-left:10px">
+			<div style="float:left;margin-left:20px;">
+				Lorem ipsum is simply dummy text of the printing and typesetting 
+			</div>
+		</div>
+		<div style="background-image:url(images/bullet.jpg);background-repeat:no-repeat;height:20px;margin-left:10px">
+			<div style="float:left;margin-left:20px;">
+				Lorem ipsum is simply dummy text of the printing and typesetting 
+			</div>
+		</div>
+		<div style="height:10px;">
+		</div>
+		<div>
+			Lorem ipsum is simply dummy text of the printing and typesetting industry.ipsum has been the
+			Lorem ipsum is simply dummy text of the printing and typesetting industry.ipsum has been the
+		</div>
+		
+		<div style="font-size:20px;font-weight:bold;background-image:url(images/section-bg.jpg);">
+			About<span style="color:green;"> us</span>
+		</div>
+		<div style="height:10px;background-image:url(images/section-bg.jpg);"></div>
+		<div style="background-image:url(images/section-bg.jpg);">
+			Lorem ipsum is simply dummy text of the printing and typesetting industry.ipsum has been the
+			Lorem ipsum is simply dummy text of the printing and typesetting industry.
+		</div>
+		<div style="background-image:url(images/section-bg.jpg);">
+			Lorem ipsum is simply dummy text of the printing and typesetting industry.ipsum has been the
+			Lorem ipsum is simply. 
+		</div>
+		<div style="height:10px;background-image:url(images/section-bg.jpg);">
+		</div>
+		<div style="background-image:url(images/section-bg.jpg);">
+			Lorem ipsum is simply dummy text of the printing and typesetting industry.ipsum has been the
+			Lorem ipsum is simply dummy text of the printing and typesetting industry.
+		</div>
+		<div style="height:30px;"></div>
+		<div style="background-image:url(images/more-btn.jpg);background-repeat:no-repeat;height: 29px;float:right;margin-right: 9px;width: 80px;">
+			<div style="float:left;padding-top:3px;padding-left:7px;">
+					ReadMore
+			</div>
+		</div>
+	</div>
+	
+	<div style="height:550px;float:right;border:1 px solid red;width:38%;font-size:15px;border-style:verticalline;border-left:dotted ;">
+		<div style="background-image:url(images/sidebar1.jpg);background-repeat:no-repeat;height:50px;">
+			<div style="color:white; padding-bottom:50px;padding-left:60px;padding-top:15px;font-weight:bold;">
+				<div>
+					Main Menu
+				</div>
+			</div>
+			<div style="background-image:url(images/bullet.jpg);background-repeat:no-repeat;height:20px;margin-left:10px">
+				<div style="margin-left:20px;text-decoration:underline;">
+					<div>
+					<span valign="top">this is a dummy link1</span>
+					</div>
+				</div>
+			</div>
+			<div style="background-image:url(images/bullet.jpg);background-repeat:no-repeat;height:20px;margin-left:10px">
+				<div style="margin-left:20px;text-decoration:underline;">
+					this is a dummy link2
+				</div>
+			</div>
+			<div style="background-image:url(images/bullet.jpg);background-repeat:no-repeat;height:20px;margin-left:10px">
+				<div style="margin-left:20px;text-decoration:underline;">
+					this is a dummy link3
+				</div>
+			</div>
+			<div style="background-image:url(images/bullet.jpg);background-repeat:no-repeat;height:20px;margin-left:10px">
+				<div style="margin-left:20px;text-decoration:underline;">
+					this is a dummy link4
+				</div>
+			</div>
+			<div style="background-image:url(images/bullet.jpg);background-repeat:no-repeat;height:20px;margin-left:10px">
+				<div style="margin-left:20px;text-decoration:underline;">
+					this is a dummy link5
+				</div>
+			</div>
+			<div style="background-image:url(images/bullet.jpg);background-repeat:no-repeat;height:20px;margin-left:10px">
+				<div style="margin-left:20px;text-decoration:underline;">
+					this is a dummy link6
+				</div>
+			</div>
+			<div style="background-image:url(images/bullet.jpg);background-repeat:no-repeat;height:20px;margin-left:10px">
+				<div style="margin-left:20px;text-decoration:underline;">
+					this is a dummy link7
+				</div>
+			</div>
+			<div style="background-image:url(images/bullet.jpg);background-repeat:no-repeat;height:20px;margin-left:10px">
+				<div style="margin-left:20px;text-decoration:underline;">
+					this is a dummy link8
+				</div>
+			</div>
+			<div style="background-image:url(images/bullet.jpg);background-repeat:no-repeat;height:20px;margin-left:10px;">
+				<div style="margin-left:20px;text-decoration:underline;">
+					this is a dummy link9
+				</div>
+			</div>
+			<div style="background-image:url(images/bullet.jpg);background-repeat:no-repeat;height:20px;margin-left:10px">
+				<div style="margin-left:20px;text-decoration:underline;">
+					this is a dummy link10
+				</div>
+			</div>
+			<div style="height:30px;"></div>
+			<div style="background-image:url(images/sidebar2.jpg);background-repeat:no-repeat;height:50px;font-size:15px;">
+				<div style="color:white;padding-left:60px;padding-top:15px;font-weight:bold;">
+					<div>
+						Contact
+					</div>
+				</div>
+			</div>
+			<div style="height:20px;">
+			</div>
+			<div style="color:green;margin-left:10px;">Lorem ipsum is simply dummy text
+			</div>
+			<div style="margin-left:10px;">Adress:<span style="margin-left:5px;">Lorem ipusum has been the</span>
+			</div>
+			<div style="margin-left:10px;">dummy text the 1500s.
+			</div>
+			<div style="margin-left:10px;">Email:<span style="margin-left:5px;">When an unknown printer took a</span>
+			</div>
+			<div style="margin-left:10px;">Phone:<span style="margin-left:5px;">00-0000000</span>
+			</div>
+			<div style="margin-left:55px;">00-0000000</div>
+		</div>
+		
+	</div>
+	
+</div>
+	
+	</div>
+	<div style="background-image:url(images/footer.jpg);height:80px;background-repeat:x-repeat;border:1 px solid blue;margin-top:832px;">
+		<div style="paddind-top:20px;">
+			<div style="position: absolute;
+top: 958px;color:white;width:100%;border:1 px solid blue;">
+				@copyright 2010.Designed by html <span style="border:1 px solid red;width: 65%;float:right;"> <a href="#" class="no-border">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;|
+			<a href="#">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;|
+			<a href="#">What's New</a>&nbsp;&nbsp;&nbsp;&nbsp;|
+			<a href="#">Services</a>&nbsp;&nbsp;&nbsp;&nbsp;|
+			<a href="#">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;|
+			<a href="#">Resource</a>&nbsp;&nbsp;&nbsp;&nbsp;|
+			<a href="#">Links</a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		
+				</div>
+			
+ </div>
+
+ </body>
+</html>

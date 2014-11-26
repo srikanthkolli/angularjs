@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function manoj(){
+	  if(document.getElementById("date").options[document.getElementById("date").selectedIndex].value=='date'){
+		  alert("please select the date");
+		  return;
+	  }
+	  if(document.getElementById("mm").options[document.getElementById("mm").selectedIndex].value=='mm'){
+		  alert("please select the month");
+		  return;
+	  }
+	  if(document.getElementById("yy").options[document.getElementById("yy").selectedIndex].value=="yy"){
+		  alert("please select the year");
+		  return;
+	  }
+	  else{
+		  alert("validation completed");
+	  }
+	  
+
+		
+  }
+  </script>
+ </head>
+
+ <body>
+  Date Of Birth
+  <select id="date">
+	<option value="date">Date</option>
+	<option value="one">01</option>
+	<option value="two">02</option>
+	<option value="three">03</option>
+    <option value="four">04</option>
+	<option value="five">05</option>
+	<option value="six">06</option>
+	<option value="seven">07</option>
+	<option value="eight">08</option>
+	<option value="nine">09</option>
+	<option value="ten">10</option>
+	
+ </select>
+  <select id="mm">
+	<option value="mm">MM</option>
+	<option value="jan">Jan</option>
+	<option value="feb">Feb</option>
+	<option value="mar">Mar</option>
+  </select>
+  <select id="yy">
+	<option value="yy">YY</option>
+	<option value="zero">1990</option>
+	<option value="one">1991</option>
+	<option value="two">1992</option>
+	<option value="three">1993</option>
+	<option value="four">1994</option>
+  </select>
+  <input type="button" onclick="manoj()" value="Click">
+ </body>
+</html>

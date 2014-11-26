@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+	body{margin:0;}
+	#con1{
+		width:40%;
+		float:left;
+		background:blue;
+		color:white;
+		height:30px;
+	}
+	#con2{
+		width:60%;
+		float:right;
+		background:blue;
+		color:white;
+		height:30px;
+	}
+	
+	
+	
+  </style>
+ </HEAD>
+
+ <BODY>
+  <div style="width:1000px">
+  <div>
+	<div id="con1">
+		Manoj
+	</div>
+	<div id="con2">
+		User Name:<input type="text">
+	
+		Password:<input type="password">
+		<input type="button" value="LOGIN">
+	</div>
+	</div>
+	<div>
+		<input type="checkbox">Keep me logged in
+	</div>
+  </div>
+ </BODY>
+</HTML>

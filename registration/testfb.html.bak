@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script>
+  function function1(){
+	if(document.getElementById("txt_email").value==""){
+		alert("please enter your email or phonenumber");
+		return;
+	}
+	if(document.getElementById("txt_pass").value==""){
+		alert("please enter your password");
+		return;
+	}
+  }
+  
+  </script>
+  <style>
+	body{
+		margin:0;
+	}
+  </style>
+ </HEAD>
+
+ <BODY>
+  <div style="border:px solid blue;height:90px;background:rgb(59, 89, 152);margin:0;">
+	<div style="font-size:50px;width:60%;float:left;color:white;">
+		<div style="font-wight:bold;">
+			Facebook
+		</div>
+	</div>
+	<div style="border:0px solid cyan;width:10%;float:right;margin-right:-10px;">
+		
+			<div style="margin-top:20px;border:px solid cyan;margin-left:20px;">
+				<input type="button" value="CLICK" style="background:rgb(59, 89, 152);color:white;" onclick="function1()">
+			</div>
+		
+	</div>
+	<div style="border:px solid yellow;width:15%;float:right;color:white;">
+		
+				<div>Password</div>
+			
+				<div><input type="password" id="txt_pass"></div>
+			
+				<div style="margin-top:10px;font-size:15px">Forgot Your Password?</div>
+			
+		
+	</div>
+	<div style="border:px solid pink;width:15%;float:right;color:white;">
+		
+				<div>EmailorPhone</div>
+			
+				<div><input type="text" id="txt_email"></div>
+			
+				<div style="margin-top:10px;font-size:15px;"><input type="checkbox">Keep me logged in</div>
+		
+	</div>
+	
+  </div>
+ </BODY>
+</HTML>

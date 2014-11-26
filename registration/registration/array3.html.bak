@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function function1(){
+	  var carname=new Array("volvo","Bmw","Saab","Honda","Aadi","Suzuki");
+	  var stringname=new Array();
+	  var len=carname.length;
+	  for(i=0;i<6;i++){
+		  stringname[i]=carname[(len-1)-i];
+	  }
+	  alert(carname);
+  }
+  </script>
+ </head>
+
+ <body>
+  <input type="button" value="Click" onclick="function1()">
+ </body>
+</html>

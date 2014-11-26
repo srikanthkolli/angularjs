@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function function1()
+  {
+	  var t1=document.getElementById("male").checked;
+	  var t2=document.getElementById("female").checked;
+	  if(t1==true && t2==false){
+		  alert("please select male or female");
+		  return;
+		  }
+		  else if(t1==true)
+		  {
+			  alert("male is selected");
+		  }
+		  else if(t2==true)
+		  {
+			  alert("female is selected");
+		  }
+	
+  }
+  </script>
+ </head>
+
+ <body>
+  <input type="radio" id="male" value="male" name="user">male
+  <input type="radio" id="female" value="female" name="user">female
+  <input type="button" value="Click" onclick="function1()">
+ </body>
+</html>

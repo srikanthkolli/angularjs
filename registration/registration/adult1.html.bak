@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script>
+  function function1(){
+	var a=document.getElementById("adult").value;
+	var c=document.getElementById("children").value;
+	var t=document.getElementById("total").value;
+	if(a==""){
+		alert("please enter no of adults");
+		document.getElementById("adult").focus();
+		return;
+	}
+	if(c==""){
+		alert("please enter no of childrens");
+		document.getElementById("children").focus();
+		return;
+	}
+  }
+  function number(){
+	a=document.getElementById("adult").value;
+	document.getElementById("total").value=a*100;
+  }
+  function number1(){
+	c=document.getElementById("children").value;
+	document.getElementById("total").value=c*50;
+	document.getElementById("total").value=a*100+c*50;
+  }
+  </script>
+ </HEAD>
+
+ <BODY>
+	  Adult:<input type="text" id="adult" onkeyup="number()"><br>
+	  Children:<input type="text" id="children" onkeyup="number1()"><br>
+	  Total:<input type="text" id="total">
+	  <input type="button" value="Click" onclick="function1()">
+ </BODY>
+</HTML>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+ </HEAD>
+
+ <BODY>
+  <form method="GET" action="anantara.html">
+  <input list="mali" name="user_name">
+	<datalist id="mali">
+		<option value="manoj">
+		<option value="balu">
+		<option value="hari">
+		<option value="manu">
+	</datalist>
+	<input type="submit">
+  </form>
+ </BODY>
+</HTML>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+	
+  <script>
+  function function1(){
+	if(document.getElementById("country").options[document.getElementById("country").selectedIndex].value=="select"){
+		alert("please select your country");
+		return;
+	}
+	if(document.getElementById("country").options[document.getElementById("country").selectedIndex].value=="india"){
+		alert("your select india");
+		return;
+	}
+	if(document.getElementById("country").options[document.getElementById("country").selectedIndex].value=="usa"){
+		alert("your select usa");
+		return;
+	}
+	if(document.getElementById("country").options[document.getElementById("country").selectedIndex].value=="uk"){
+		alert("your select uk");
+		return;
+	}
+	
+	
+ }
+  </script>
+ </HEAD>
+
+ <BODY>
+  <table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td>Countrys</td>
+		<td>
+			<select id="country">
+				<option value="select">Select</option>
+				<option value="india">India</option>
+				<option value="usa">Usa</option>
+				<option value="uk">Uk</option>
+			</select>
+		</td>
+		<td>
+			<input type="button" value="Click" onclick="function1()">
+		</td>
+	</tr>
+	
+  </table>
+ </BODY>
+</HTML>

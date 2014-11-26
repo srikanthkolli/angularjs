@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+ </HEAD>
+
+ <BODY>
+  <form id="frm1" action="childern.html" method="GET">
+  Firstname<input type="text" name="firstname"><br>
+  Lastname<input type="text" name="lastname">
+  <input type="submit">
+  </form>
+  <form id="frm2" action="reverse.html" method="GET">
+  Firstname<input type="text" name="firstname"><br>
+  Lastname<input type="text" name="lastname">
+  <input type="submit">
+  </form>
+ </BODY>
+</HTML>

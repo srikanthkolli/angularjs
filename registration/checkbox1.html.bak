@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function function1()
+  {
+	  var num=0;
+	  if(document.getElementById("tv").checked==true)
+	  {
+		 num=num+1;
+		 }
+		 if(document.getElementById("games").checked==true)
+		 {
+			 num=num+1;
+			 }
+			 if(document.getElementById("music").checked==true)
+			 {
+				 num=num+1;
+				 }
+				 if(document.getElementById("read").checked==true)
+				 {
+					 num=num+1;
+					 }
+					 if(num>1)
+					 {
+						 alert("only select single checkbox");
+						 }
+	  }
+  </script>
+ </head>
+
+ <body>
+  <input type="checkbox" id="tv" value="tv">Tv
+  <input type="checkbox" id="games" value="games">Games
+  <input type="checkbox" id="music" value="music">Music
+  <input type="checkbox" id="read" value="read">Read
+  <input type="button" value="Click" onclick="function1()">
+ </body>
+</html>

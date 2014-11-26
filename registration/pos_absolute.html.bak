@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+	.pos_abs{
+		position:absolute;
+		left:30px;
+		top:150px;
+	}
+  </style>
+ </HEAD>
+
+ <BODY>
+  <h1 class="pos_abs">This is a heading with absolute position.</h1>
+  <p>This ia a paragraph.</p>
+ </BODY>
+</HTML>

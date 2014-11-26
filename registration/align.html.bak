@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+  h1{
+  text-align:center;
+  color:red;
+  }
+  p.date{
+  text-align:right;
+  color:blue;
+  }
+  p.manoj{
+  text-align:justify;
+  color:brown;
+  }
+  p.manoj1{
+  color:red;
+  }
+
+  </style>
+ </HEAD>
+
+ <BODY>
+  <h1>This is a heading.</h1>
+  <p class="date">Nov 2013</p>
+  <p class="manoj">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 
+'just remember that all the people in this world haven't had the advantages that you've had.'In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 
+'just remember that all the people in this world haven't had the advantages that you've had.'In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 
+'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+  <p class="manoj1"><b style="color:blue;">Note:</b> Resize the browser window to see how the value "justify" works.</p>
+ </BODY>
+</HTML>

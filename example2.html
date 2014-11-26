@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+    <script src="angular.js"></script>
+ </HEAD>
+<!--  Form validation Using Angular JS -->
+ <BODY>
+	<form>
+	<div ng-app='formValidation' ng-controller='validationCon'>
+		<div>
+			<label>Name:</label>
+			<input type='text' name='user_name' ng-model='user_name'>
+			<p ng-bind='user_name_validation'></p>
+		</div>
+		<div>
+			<label>Email:</label>
+			<input type='text' name='user_email' ng-model='user_email'>
+			<p ng-bind='user_email_validation'></p>
+		</div>
+		<input type='button' ng-click='validationCon.formsubmit()' value='Submit'>
+	</div>
+	</form>
+	  <script src="js/example2.js"></script>
+ </BODY>
+</HTML>

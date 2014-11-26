@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+	body{
+	margin:0;
+	border:0;
+	padding:0;
+	}
+		a:link{
+			text-decoration:none;
+			color:white;
+			
+		}
+		a:visited{
+			color:white;
+		}
+		a:hover{
+			color:blue;
+			
+			background-image:url("images/Home_button.png");
+			background-repeat:no-repeat;
+			height:35px;
+			width:85px;
+			display:block;
+			text-align:center;
+			padding-top:5px;
+		}
+		
+
+	}
+  </style>
+
+
+ </HEAD>
+
+ <BODY>
+  <div  style="border:1 px solid red;font-family:Times New Roman,Times,serif;">
+	<div style="height:30px;background-image:url(images/backcolor_pixel.png);"></div>
+	<div style="border:1px solid black;height:380px;background-image:url(images/backcolor_pixel.png);">
+		<div style="width:50%;border:1 px solid red;height:130px;float:left;">
+			<div style="background-image:url(images/Logo.png);background-repeat:no-repeat;height:100px;border:1 px solid blue;width:63%;float:left;margin-left:10px;">
+			</div>
+		</div> 
+		<div id="menu" style="width:48%;border:1 px solid red;height:130px;float:right;">
+			<div class="test" style="height:40px;width:15%;float:left;background-repeat:no-repeat;border:1 px solid red;padding-left:15px;padding-top:5px;"><a href="#">Home</a>
+			</div> 
+			<div class="test"  style="height:40px;width:15%;float:left;background-repeat:no-repeat;border:1 px solid red;padding-left:15px;padding-top:5px;"><a href="#">Gallery</a>
+			</div> 
+			<div class="test" style="height:40px;width:15%;float:left;background-repeat:no-repeat;border:1 px solid red;padding-left:15px;padding-top:5px;"><a href="#">News</a>
+			</div> 
+			<div class="test" style="height:40px;width:15%;float:left;background-repeat:no-repeat;border:1 px solid red;padding-left:15px;padding-top:5px;"><a href="#">About</a>
+			</div> 
+			<div class="test" style="height:40px;width:15%;float:left;background-repeat:no-repeat;border:1 px solid red;padding-left:15px;padding-top:5px;"><a href="#">Contact</a>
+			</div> 
+		</div>
+		<div style="width:100%;float:left;border:1 px solid black;">
+		<div style="width:50%;border:1 px solid red;height:250px;float:left;">
+			<div style="background-image:url(images/templatemo_275_connection_12.png);background-repeat:no-repeat;height:220px;border:1 px solid blue;width:80%;float:left;margin-left:10px;">
+			</div>
+		</div> 
+		<div style="width:48%;border:1 px solid red;height:250px;float:right;">
+			<div style="font-family:arial;color:white;font-weight:bold;"><h1>FREE CSS TEMPLATE</h1>
+			</div>
+			<div style="font-weight:bold;color:white;"><span style="color:#00FFFF;">templatemo.com</span> provides a lot of high quality free css templates foryour 
+			</div>
+			<div style="font-weight:bold;color:white;">Personal or commercial websites.Pellentesque vitae magna.Sed nec est.
+			</div>
+			<div style="font-weight:bold;color:white;">Suspendisse a nibh tristique justo rhoncus volutpat.
+			</div>
+			<div  style="background-image:url(images/Readmore.png);background-repeat:no-repeat;float:right;height:40px;border:1 px solid red;width:25%;">
+			</div>
+		</div>
+		</div>
+	</div>
+	<div style="height:40px;"></div>
+	<div style="height:230px;border:1 px solid black;">
+		<div style="border:1 px solid blue;width:33%;float:left;color:green;margin-left:10px;"><h2>Special Effects</h2>
+		</div>
+		<div style="border:1 px solid blue;width:33%;float:left;color:green;"><h2>Editing Videos</h2>
+		</div>
+		<div style="border:1 px solid blue;width:33%;float:left;color:green;"><h2>Media players</h2>
+		</div>
+		<div>
+			<div style="background-image:url(images/Special-effects.png);background-repeat:no-repeat;height:150px;width:33%;border:1 px solid red;float:left;margin-left:10px;">
+				<div style="margin-left:90px;">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.Cras<br>erat orci,laoreet quis ornare vitae,<br>ullamcorper quis mi.
+				</div>
+				<div  style="background-image:url(images/Readmore.png);background-repeat:no-repeat;height:60px;width:85%;margin-left:200px;border:1 px solid red;margin-top:30px;">
+				</div>
+			</div>
+			<div style="background-image:url(images/Edit-videos.png);background-repeat:no-repeat;height:150px;width:33%;border:1 px solid red;float:left;">
+				<div style="margin-left:90px;">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.Cras<br>erat orci,laoreet quis ornare vitae,<br>ullamcorper quis mi.
+				</div>
+				<div  style="background-image:url(images/Readmore.png);background-repeat:no-repeat;height:60px;width:85%;margin-left:200px;border:1 px solid red;margin-top:30px;">
+				</div>
+			</div>
+			<div style="background-image:url(images/Mediaplayers.png);background-repeat:no-repeat;height:150px;width:33%;border:1 px solid red;float:left;">
+				<div style="margin-left:90px;">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.Cras<br>erat orci,laoreet quis ornare vitae,<br>ullamcorper quis mi.
+				</div>
+				<div  style="background-image:url(images/Readmore.png);background-repeat:no-repeat;height:60px;width:85%;margin-left:200px;border:1 px solid red;margin-top:30px;">
+				</div>
+			</div>
+		</div>
+	</div><hr>
+	<div style="height:180px;border:1 px solid black;">
+		<div style="color:green;margin-left:10px;"><h1>High Quality Video Production</h1></div>
+		<div style="margin-left:10px;">
+			Lorem ipsum dolor sit amet,consectetur adipiscing elit.Craserat orci,laoreet quis ornare vitae,ullamcorper quis mi.orem ipsum 
+			Lorem ipsum dolor sit amet,consectetur adipiscing elit.Craserat orci,laoreet quis ornare vitae,ullamcorper quis mi.orem ipsum 
+			Lorem ipsum dolor sit amet,consectetur adipiscing elit.Craserat orci,laoreet quis ornare vitae,ullamcorper quis miorem ipsum 
+			Lorem ipsum dolor sit amet,consectetur adipiscing elit.Craserat orci,laoreet quis ornare vitae,ullamcorper quis mi.
+		</div>
+	</div><hr>
+	<div style="height:180px;border:1 px solid black;">
+		<div style="color:green;margin-left:10px;"><h1>Fusce Sollicitudin nisl a lectus</h1></div>
+		<div style="margin-left:10px;">
+			Lorem ipsum dolor sit amet,consectetur adipiscing elit.Craserat orci,laoreet quis ornare vitae,ullamcorper quis mi.orem ipsum 
+			Lorem ipsum dolor sit amet,consectetur adipiscing elit.Craserat orci,laoreet quis ornare vitae,ullamcorper quis mi.orem ipsum 
+			Lorem ipsum dolor sit amet,consectetur adipiscing elit.Craserat orci,laoreet quis ornare vitae,ullamcorper quis miorem ipsum 
+			Lorem ipsum dolor sit amet,consectetur adipiscing elit.Craserat orci,laoreet quis ornare vitae,ullamcorper quis mi.
+		</div>
+	</div>
+	<div style="border:1px solid black;height:30px;background:black;"></div>
+	<div style="height:210px;border:1 px solid red;background:black;color:white;">
+		<div style="height:200px;width:33%;border:1 px solid black;float:left;">
+			<div style="background-image:url(images/Mail.png);background-repeat:no-repeat;width:30%;height:40px;border:1 px solid red;margin-left:10px;">
+				<div style="margin-left:70px;color:#E1E628;font-weight:bold;">SUBSCRIBE</div>
+				<div style="margin-left:70px;width:250px;border:1 px solid red;">GET NEWSLETTERS</div>
+				<div style="height:40px;"></div>
+				<div style="height:40px;border:1 px solid red;both:clear;width:324px;">
+					<div>
+						<input type="text">subcsribe
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		<div style="height:200px;width:33%;border:1 px solid black;float:left;">
+			<div style="background-image:url(images/Twitter.png);background-repeat:no-repeat;width:30%;height:80px;border:1 px solid red;">
+				<div style="margin-left:70px;color:#80FFFF;font-weight:bold;">FOLLOWS</div>
+				<div style="margin-left:70px;width:250px;border:1 px solid red;">ON TWITTER</div>
+				<div style="height:40px;"></div>
+				<div style="height:120px;width:324px;border:1 px solid red;">
+					<div>
+						<span style="color:#80FFFF;font-size:12px;">@Duis vitae velit</span> ut ultricies fusce sollicitudin nisl a
+					</div>
+					<div style="font-size:12px;">
+						lectus pellentesque odio.
+					</div>
+					<div style="height:20px;"></div>
+					<div>
+						<span style="color:#80FFFF;font-size:12px;">@Duis vitae velit</span> ut ultricies fusce sollicitudin nisl a
+					</div>
+					<div>
+						<span style="color:#80FFFF;font-size:12px;">@Duis vitae velit</span> ut ultricies fusce sollicitudin nisl a
+					</div>
+					<div style="font-size:12px;">
+						lectus pellentesque odio.
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div style="height:200px;width:33%;border:1 px solid black;float:left;">
+			<div style="background-image:url(images/Email.png);background-repeat:no-repeat;width:30%;height:80px;border:1 px solid red;">
+				<div style="margin-left:70px;color:#E1E628;font-weight:bold;">EMAIL</div>
+				<div style="margin-left:70px;width:250px;border:1 px solid red;">CONTACT US</div>
+				<div style="height:40px;"></div>
+				<div style="height:120px;width:324px;border:1 px solid red;font-size:12px;">
+					<div>
+						@Duis vitae velit ut ultricies fusce sollicitudin nisl a
+					</div>
+					<div>
+						lectus pellentesque odio.
+					</div>
+					<div style="height:20px;"></div>
+					<div>
+						Tel:010-010-1234
+					</div>
+					<div>
+						Fax:020-020-5678
+					</div>
+					<div>
+						Email:<span style="color:#80FFFF;">info@yourcompany.com</span>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	<div style="height:40px;border:1 px solid green;background:black;color:white;">
+		<div style="margin-left:200px;">
+			Copyright@2014 your Company Name |Website Templetes by css Templetes
+		</div>
+	</div>
+  </div>
+ </BODY>
+</HTML>

@@ -1,0 +1,5 @@
+1. To have to buttons when clicked shows the respective forms  to the user
+2. When signnup form submit button is clicked form validation should happend and send the form data through ajax and save those details in DB and return the response.
+3. After receiving the respose user should be taken to login form.
+3. When user fills the login form and submits validation should happen and send a request through ajax to check the user details in DB and send response
+4. If response is success redirect user to homescreen otherwise show an error message

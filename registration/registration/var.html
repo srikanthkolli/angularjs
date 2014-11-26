@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="first">
+  <script>
+  function function1()
+  {
+	  var value=document.getElementById("first").value;
+	  for(var i=0;i<=value;value--)
+	  {
+		  alert(value);
+	  }
+	  document.getElementById("first").focus();
+	  document.getElementById("first").value="";
+  }
+  </script>
+ </head>
+
+ <body>
+  Enterno<input type="text" id="first">
+  <input type="button" value="Click" onclick="function1()">
+ </body>
+</html>

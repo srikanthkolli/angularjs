@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function manoj()
+  {
+	  var i=document.getElementById("first").value;
+	  var last=document.getElementById("last").value;
+	  if(i=="")
+	  {
+		  alert("please select the first name");
+		  document.getElementById("first").focus();
+		  return;
+		  }
+		  else if(last=="")
+		  {
+			  alert("please select the last name");
+			  document.getElementById("first").focus();
+			  return;
+			  }
+		  else
+		  {
+			  alert("validation completed");
+			  }
+	  
+	  
+	 
+   }
+  </script>
+ </head>
+
+ <body>
+  Fist Name<input type="text" id="first"><br>
+  Last Name<input type="text" id="last">
+  <input type="button" value="Click" onclick="manoj()">
+ </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+	#heading1{
+	}
+	#heading2{
+		margin-left:80px;margin-top:-20px;
+	}
+	#heading3{
+		margin-left:170px;margin-top:-20px;
+	}
+  </style>
+ </HEAD>
+
+ <BODY>
+  <div>
+	<div id="heading1">
+		Heading1
+	</div>
+	<div id="heading2">
+		Heading2
+	</div>
+	<div id="heading3">
+		Heading3
+	</div>
+	<div style="margin-left:20px;">
+		1
+	</div>
+	<div style="margin-left:80px;margin-top:-20px;">
+		Manoj
+	</div>
+	<div style="margin-left:170px;margin-top:-20px;background:red;">
+		1234
+	</div>
+  </div>
+ </BODY>
+</HTML>

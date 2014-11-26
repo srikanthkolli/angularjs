@@ -1,0 +1,7 @@
+<?php
+	if((!isset=$_SESSION["sessuser-id"]) || $_SESSION["sessuser-id"]=='')
+	{
+		header("location:design_home.php");
+		exit;
+	}
+?>

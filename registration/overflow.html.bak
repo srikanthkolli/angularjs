@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+	.scroll{
+		color:red;
+		background:black;
+		width:100px;
+		height:100px;
+		overflow:scroll;
+	}
+	.hidden{
+		color:blue;
+		background:black;
+		width:100px;
+		height:100px;
+		overflow:hidden;
+	}
+  </style>
+ </HEAD>
+
+ <BODY>
+  <p class="scroll">This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.</p>
+   <p class="hidden">This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.</p>
+ </BODY>
+</HTML>

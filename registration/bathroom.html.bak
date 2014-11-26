@@ -1,0 +1,886 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+  body{
+		background-image:url("imges/bg_home.jpg");
+		background-repeat:no-repeat;
+		z-index:-1;
+	}
+	li{
+		display:inline;
+		color:white;
+	}
+	.sup_phone{
+		text-align: center;
+		font-size: 18px;
+		font-style: italic;
+		margin-top: 16px;
+		color:#00675f;
+		font-size:21px;
+	}
+	.sup_email{
+		text-align: center;
+		font-size: 18px;
+		font-style: italic;
+		margin-top: 16px;
+		color:#00675f;
+		font-size:21px;
+	}
+	.list_width li a{
+		color:white;
+		font-family: Verdana, sans-serif;
+		font-size:14px;
+	}
+	.header_con {
+		color:white;
+	}
+	.home_un li a{
+		font-family: Verdana, sans-serif;
+		font-size:12px;
+		color:#00675f;
+	}
+	.pos_fix{
+		top:0px;
+		position:fixed;
+	}
+  </style>
+  <script>
+	function function1(){
+		var i=document.getElementById("name").value;
+		var las=document.getElementById("last").value;
+		var a=document.getElementById("address").value;
+		var s=document.getElementById("suburb").value;
+		var p=document.getElementById("phone").value;
+		var n=document.getElementById("num").value;
+		var e=document.getElementById("email").value;
+		var r1=document.getElementById("timber").checked;
+		var r2=document.getElementById("concrete").checked;
+		var a1=document.getElementById("board").checked;
+		var a2=document.getElementById("solid").checked;
+		var a3=document.getElementById("veneer").checked;
+		var l1=document.getElementById("length").value;
+		var w=document.getElementById("width").value;
+		var h=document.getElementById("height").value;
+		var b1=document.getElementById("exist").checked;
+		var b2=document.getElementById("new").checked;
+		var m1=document.getElementById("min").checked;
+		var m2=document.getElementById("build").checked;
+		var m3=document.getElementById("door").checked;
+		var d1=document.getElementById("reg").checked;
+		var d2=document.getElementById("per").checked;
+		var d3=document.getElementById("doorlenght").checked;
+		var d4=document.getElementById("cellingheight").checked;
+		var p1=document.getElementById("stand").checked;
+		var p2=document.getElementById("spa").checked;
+		var p3=document.getElementById("shower").checked;
+		var k=document.getElementById("base").value;
+		var j=document.getElementById("size").value;
+		var c=document.getElementById("bath").value;
+		var k1=document.getElementById("situe").checked;
+		var k2=document.getElementById("poly").checked;
+		var j1=document.getElementById("frame").checked;
+		var j2=document.getElementById("semi").checked;
+		var j3=document.getElementById("framed").checked;
+		var m=document.getElementById("meter").value;
+		var i1=document.getElementById("gloss").checked;
+		var i2=document.getElementById("stain").checked;
+		var i3=document.getElementById("glo").checked;
+		var i4=document.getElementById("stat").checked;
+		var i5=document.getElementById("text").checked;
+		var i6=document.getElementById("lam").checked;
+		var i7=document.getElementById("abs").checked;
+		var h1=document.getElementById("stone").checked;
+		var h2=document.getElementById("stonehig").checked;
+		var h3=document.getElementById("post").checked;
+		var n1=document.getElementById("vanit").checked;
+		var n2=document.getElementById("top").checked;
+		var n3=document.getElementById("under").checked;
+		var w1=document.getElementById("yes").checked;
+		var w2=document.getElementById("no").checked;
+		var z=document.getElementById("budget").value;
+		var z1=document.getElementById("comments").value;
+		var v1=document.getElementById("refer").checked;
+		var v2=document.getElementById("google").checked;
+		var v3=document.getElementById("home").checked;
+		var v4=document.getElementById("yellow").checked;
+		var v5=document.getElementById("other").checked;
+		var nameRegex = /^[a-zA-Z\-]+$/;
+		 var re=/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		if(i==""){
+			alert("please enter firstname");
+			document.getElementById("name").focus();
+			return;
+		}
+		if(nameRegex.test(i)==false){
+			alert("invalid firstname");
+			document.getElementById("name").focus();
+			return;
+		}
+		if(las==""){
+			alert("please enter lastname");
+			document.getElementById("last").focus();
+			return;
+		}
+		if(nameRegex.test(las)==false){
+			alert("invalid lastname");
+			document.getElementById("last").focus();
+			return;
+		}
+		if(a==""){
+			alert("please enter your address");
+			document.getElementById("address").focus();
+			return;
+		}
+		if(s==""){
+			alert("please enter your suburb");
+			document.getElementById("suburb").focus();
+			return;
+		}
+		if(nameRegex.test(s)==false){
+			alert("invalid suburb");
+			document.getElementById("suburb").focus();
+			return;
+		}
+		if(document.getElementById("state").options[document.getElementById("state").selectedIndex].value=="selecte"){
+			alert("please select state");
+			return;
+		}
+		if(p==""){
+			alert("please enter your phone number");
+			document.getElementById("phone").focus();
+			return;
+		}
+		if(isNaN(p)){
+			alert("invalid phone number");
+			document.getElementById("phone").focus();
+			return;
+		}
+		if(n==""){
+			alert("please enter your mobile number");
+			document.getElementById("num").focus();
+			return;
+		}
+		if(isNaN(p)){
+			alert("invalid mobile number");
+			document.getElementById("num").focus();
+			return;
+		}
+		if(e==""){
+			alert("please enter your email");
+			document.getElementById("email").focus();
+			return;
+	    }
+		if(re.test(e)==false){
+			alert("invalid email");
+			document.getElementById("email").focus();
+			return;
+		}
+		if(r1==false && r2==false){
+			alert("please select flor type");
+			return;
+		}
+		if(a1==false && a2==false && a3==false){
+			alert("please select wall type");
+			return;
+		}
+		if(l1==""){
+			alert("please enter bathroom length");
+			document.getElementById("length").focus();
+			return;
+		}
+		if(w==""){
+			alert("please enter bathroom width");
+			document.getElementById("width").focus();
+			return;
+		}
+		if(h==""){
+			alert("please enter bathroom cellinghight");
+			document.getElementById("height").focus();
+			return;
+		}
+		if(b1==false && b2==false){
+			alert("please select bathroom layout");
+			return;
+		}
+		if(m1==false && m2==false && m3==false){
+			alert("please select tile height");
+			return;
+		}
+		if(d1==false && d2==false && d3==false && d4==false){
+			alert("please select remaining walls of bathroom");
+			return;
+		}
+		if(p1==false && p2==false && p3==false){
+			alert("please select bath type");
+			return;
+		}
+		if(k==""){
+			alert("please enter shower base length");
+			document.getElementById("base").focus();
+			return;
+		}
+		if(j==""){
+			alert("please enter shower base width");
+			document.getElementById("size").focus();
+			return;
+		}
+		if(c==""){
+			alert("please enter shower base height");
+			document.getElementById("bath").focus();
+			return;
+		}
+		if(k1==false && k2==false){
+			alert("please select shower recess");
+			return;
+		}
+		if(j1==false && j2==false && j3==false){
+			alert("please select shower screen");
+			return;
+		}
+		if(document.getElementById("type").options[document.getElementById("type").selectedIndex].value=="select"){
+			alert("please select cabinet type");
+			return;
+		}
+		if(m==""){
+			alert("please enter your cabinet size");
+			document.getElementById("meter").focus();
+			return;
+		}
+		if(nameRegex.test(m)==false){
+			alert("invalid cabinet size");
+			document.getElementById("meter").focus();
+			return;
+		}
+		if(i1==false && i2==false && i3==false && i4==false && i5==false && i6==false && i7==false){
+			alert("please select vanity bench top");
+			return;
+		}
+		if(h1==false && h2==false && h3==false){
+			alert("please select vanity bench top");
+			return;
+		}
+		if(n1==false && n2==false && n3==false){
+			alert("please select  basin");
+			return;
+		}
+		if(w1==false && w2==false){
+			alert("please select toilet suite");
+			return;
+		}
+		if(z==""){
+			alert("please enter  bathroom budget");
+			document.getElementById("budget").focus();
+			return;
+		}
+		if(z1==""){
+			alert("please enter comments");
+			document.getElementById("comments").focus();
+			return;
+		}
+		if(v1==false && v2==false && v3==false && v4==false && v5==false){
+			alert("please select How did you find Us?");
+			return;
+		}
+	}
+  </script>
+ </HEAD>
+
+ <BODY>
+  <div style="border:1 px solid black;height:2030px;" width="980px">
+	<div style="border:1 px solid red;width:980px;" class="pos_fix">
+	<div style="height:32px;background:#74cdc7;">
+	<div style="border:1 px solid black;float:left;width:58%;height:30px;">
+	</div>
+	<div style="border:1 px solid black;float:left;width:40%;height:30px;background:#74cdc7;">
+		<div style="border:1 px solid red;height:30px;" class="home_un">
+			<ul style="margin-top:1 px;margin-left:150px;" class="header_con">
+				<li><a href="#">Home<span style="color:white">|</span></a></li>
+				<li><a href="#">About Us<span style="color:white">|</span></a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<div style="border:1 px solid green;height:120px;clear:both;background:#74cdc7;">
+		<div style="border:1 px solid red;height:120px;width:40%;float:left;">
+			<div>
+				<img src="imges/logo.png" width="100%" height="120px" style="margin-top:5px;">
+			</div>
+		</div>
+		<div style="border:1 px solid red;height:120px;width:58%;float:left;">
+			<div style="border:1 px solid black;height:50px;">
+				<div style="border:1 px solid red;height:45px;float:left;width:40%;">
+					<div class="sup_phone">Phone:(03)9563 4660
+					</div>
+				</div>
+				<div style="border:1 px solid red;height:45px;float:left;width:58%;">
+					<div class="sup_email">Email:info@supremebk.com.au
+					</div>
+				</div>
+			</div>
+			<div style="border:1 px solid black;height:60px;">
+				<div class="list_width">
+					<ul>
+						<li><a href="#">Home |</a></li>
+						<li><a href="#">About Us |</a></li>
+						<li><a href="#">Gallery |</a></li>
+						<li><a href="#">Testimonials |</a></li>
+						<li><a href="#">Contact Us |</a></li>
+						<li><a href="#">Quote</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div style="border:1 px solid red;height:30px;">
+	</div>
+	<div style="border:1 px solid lime;width:65%;float:left;height:1830px;">
+		<div style="border:1 px solid red;height:150px;background:white;border-radius:10px;margin-top:144px;">
+			<div style="margin-top:10px;margin-left:10px;font-family:verdana;font-size:13px;">We value your feedback and would love to hear from you.
+			</div>
+			<div style="margin-left:10px;font-family:verdana;font-size:13px;">Please leave a detailed enquiry on how we can assist you fruther...
+			</div>
+			<div style="margin-top:18px;margin-left:10px;font-family:verdana;font-size:14px;">If you were looking for a qoute please feel free to complete our Online Quotation Form.
+			</div>
+			<div style="margin-top:18px;margin-left:10px;font-family:verdana;font-size:14px;font-style:italic;">Thankyou for considering us for your next project.
+			</div>
+		</div>
+		<div style="border:1 px solid green;height:30px;">
+		</div>
+		<div style="border:1 px solid red;height:1650px;background:white;border-radius:10px;">
+			<div>
+				<table cellspacing="0" cellpadding="04" border="0" style="margin-left:10px;font-family:verdana;font-size:13px;">
+					<tr>
+						<h2 colspan="2" style="margin-left:10px;">Bathroom Estimate Form</h2>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td><strong>ONLINE BATHROOM ESTIMATE FORM</strong>
+						</td>
+					</tr>
+					<tr>
+						<td>First Name:</td>
+						<td>
+							<input type="text" placeholder="Please enter your firstname" size="35" style="height:30px;background-color:#9D9D9D;" id="name">
+						</td>
+					</tr>
+					<tr>
+						<td>Last Name:</td>
+						<td>
+							<input type="text" placeholder="Please enter your lastname" size="35" style="height:30px" id="last">
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">Address:</td>
+						<td>
+							<textarea rows="4" cols="27" id="address"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>Suburb</td>
+						<td>
+							<input type="text" placeholder="Please enter your suburb" size="35" style="height:30px" id="suburb">
+						</td>
+					</tr>
+					<tr>
+						<td>State</td>
+						<td>
+							<select style="width:239px;height:30px;" id="state">
+								<option value="selecte">- -Please select- -</option>
+								<option value="victoria">Victoria</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Phone (B/H):</td>
+						<td>
+							<input type="text" placeholder="Please enter your phone(B/H)" size="35" style="height:30px" id="phone">
+						</td>
+					</tr>
+					<tr>
+						<td>Mobile:</td>
+						<td>
+							<input type="text" placeholder="Please enter your mobile" size="35" style="height:30px" id="num">
+						</td>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td>
+							<input type="text" placeholder="Please enter your email" size="35" style="height:30px" id="email">
+						</td>
+					</tr>
+					<tr>
+						<td>Floor</td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" style="font-size:13px;" width="100%">
+								<tr>
+									<td>
+										<input type="radio" value="male" name="users" id="timber">Timber
+									</td>
+									<td>
+										<input type="radio" value="female" name="users" id="concrete">Concrete
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>Wall Type</td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" style="font-size:13px;" width="100%">
+								<tr>
+									<td>
+										<input type="radio" value="wether" name="user" id="board">Weatherboard
+									</td>
+									<td>
+										<input type="radio" value="solid" name="user" id="solid">Solid Brick
+									</td>
+									<td>
+										<input type="radio" value="brick" name="user" id="veneer">Brick Veneer
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>Bathroom Length:</td>
+						<td>
+							<input type="text" placeholder="Bathroom Length:" size="35" style="height:30px" id="length">(mm)
+						</td>
+					</tr>
+					<tr>
+						<td>Bathroom Width:</td>
+						<td>
+							<input type="text" placeholder="Bathroom Width" size="35" style="height:30px" id="width">(mm)
+						</td>
+					</tr>
+					<tr>
+						<td>Bathroom Ceiling<br>Height:</td>
+						<td>
+							<input type="text" placeholder="Bathroom Ceiling Height" size="35" style="height:30px" id="height">(mm)
+						</td>
+					</tr>
+					<tr>
+						<td>Layout Of Bathroom:</td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" style="font-size:13px;" width="100%">
+								<tr>
+									<td>
+										<input type="radio" value="male" name="use" id="exist">As Per Existing
+									</td>
+									<td>
+										<input type="radio" value="female" name="use" id="new">New Layout
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>Tile Height:</td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" style="font-size:13px;" width="100%">
+								<tr>
+									<td>
+										<input type="radio" value="male" name="uer" id="min">Min as per Build Reg.
+									</td>
+									<td>
+										<input type="radio" value="female" name="uer" id="build">Height 1200mm
+									</td>
+									<td>
+										<input type="radio" value="female" name="uer" id="door">Door Height
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" value="female" name="uer" id="cell">Ceiling Height
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>Remaining Walls:</td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" style="font-size:13px;">
+								<tr>
+									<td>
+										<input type="radio" value="male" name="usr" id="reg">Min as per Build Reg.
+									</td>
+									<td>
+										<input type="radio" value="female" name="usr" id="per">Height 1200mm
+									</td>
+									<td>
+										<input type="radio" value="female" name="usr" id="doorheight">Door Height
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" value="female" name="usr=" id="cellingheight">Ceiling Height
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>Bath:</td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" style="font-size:13px;" width="100%">
+								<tr>
+									<td>
+										<input type="radio" value="male" name="usere" id="stand">Standard
+									</td>
+									<td>
+										<input type="radio" value="female" name="usere" id="spa">Spa
+									</td>
+									<td>
+										<input type="radio" value="female" name="usere" id="shower">Shower/Bath
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>Shower Base:</td>
+						<td>Size:</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="text" placeholder="Shower Base Length" size="35" style="height:30px" id="base">(mm)
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="text" placeholder="Shower Base Width" size="35" style="height:30px" id="size">(mm)
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="text" placeholder="Shower Height" size="35" style="height:30px" id="bath">(mm)
+						</td>
+					</tr>
+					<tr>
+						<td>Shower Recess:</td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" style="font-size:13px;" width="100%">
+								<tr>
+									<td>
+										<input type="radio" value="male" name="ser" id="situe">In-Situe (walk in)<br>Min Required (1900mm) 
+									</td>
+									<td>
+										<input type="radio" value="female" name="ser" id="poly">Polymarble
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>Shower Screen:</td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" style="font-size:13px;">
+								<tr>
+									<td>
+										<input type="radio" value="male" name="ur" id="frame">Frameless
+									</td>
+									<td>
+										<input type="radio" value="female" name="ur" id="semi">Semi-Frameless
+									</td>
+									<td>
+										<input type="radio" value="female" name="ur" id="framed">Framed
+									</td>   
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>Vanity Cabinet Type<br>& Size:</td>
+						<td>
+							<select style="width:239px;height:30px;" id="type">
+								<option value="select">- -Please select- -</option>
+								<option  value="cabinet">Standard Cabinet</option>
+								<option value="float">Floating Cabinet</option>
+								<option value="corner">Corner Cabinet</option>
+								<option value="cab">Semi Recessed Cab</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="text" placeholder="Vinty Cabinet Size" size="35" style="height:30px" id="meter">mm X
+						</td>
+					</tr>
+					<tr>
+						<td>Cabinet Finish:
+						</td>
+						<td>2-Pack:</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" style="font-size:13px;" width="100%">
+								<tr>
+									<td>
+										<input type="radio" value="male" name="male" id="gloss">Gloss 
+									</td>
+									<td>
+										<input type="radio" value="female" name="male" id="stain">Satin
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td>Vinylwrap:</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" style="font-size:13px;" width="100%">
+								<tr>
+									<td>
+										<input type="radio" value="male" name="male" id="glo">Gloss 
+									</td>
+									<td>
+										<input type="radio" value="female" name="male" id="stat">Satin
+									</td>
+									<td>
+										<input type="radio" value="female" name="male" id="text">Textured
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td>Rollform Doors:</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" style="font-size:13px;">
+								<tr>
+									<td>
+										<input type="radio" value="male" name="male" id="lam">Laminex Rollform Doors
+									</td>
+									<td>
+										<input type="radio" value="female" name="male" id="abs">Laminex 2mm ABS Edging
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>Vanity Bench Top:</td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" style="font-size:13px;">
+								<tr>
+									<td>
+										<input type="radio" value="male" name="values" id="stone">40mm Stone
+									</td>
+									<td>
+										<input type="radio" value="female" name="values" id="stonehig">20mm Stone
+									</td>
+									<td>
+										<input type="radio" value="female" name="values" id="post">Postform(Laminex)
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>Basin:</td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" style="font-size:13px;" width="100%">
+								<tr>
+									<td>
+										<input type="radio" value="male" name="more" id="vanit">Vanity
+									</td>
+									<td>
+										<input type="radio" value="female" name="more" id="top">Counter Top
+									</td>
+									<td>
+										<input type="radio" value="female" name="more" id="under">Under Counter
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>Toilet Suite</td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" style="font-size:13px;">
+								<tr>
+									<td>
+										<input type="radio" value="male" name="mores" id="yes">Yes
+									</td>
+									<td>
+										<input type="radio" value="female" name="mores" id="no">No
+									</td>
+									
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>Budget:</td>
+						<td>
+							<input type="text" placeholder="Please enter your budget" size="35" style="height:30px" id="budget">
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">Comments:</td>
+						<td>
+							<textarea rows="4" cols="27" id="comments"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">How did you find Us?</td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" style="font-size:13px;">
+								<tr>
+									<td>
+										<input type="radio" value="male" name="google" id="refer">Referral</td>
+									<td>
+										<input type="radio" value="male" name="google" id="google">Google
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" value="male" name="google" id="home">Home Improvements</td>
+									<td>	
+										<input type="radio" value="male" name="google" id="yellow">Yellow Pages
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" value="male" name="google" id="other">Other
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="text" size="35" style="height:30px" id="page">
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>Upload Plans:</td>
+						<td>For multiple file uploads please click "Add More Plans"</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td  style="border:1px solid black;">
+							<input type="file" id="file">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										<input type="button" value="Submit" style="margin-left:46px;margin-top:23px;" onclick="function1()">
+									</td>
+									<td>
+										<input type="button" value="Reset" style="margin-left:10px;margin-top:23px;">
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div style="border:1 px solid green;width:33%;float:right;height:600px;">
+		<div style="border:1 px solid red;height:160px;background:white;border-radius:10px;margin-top:148px;">
+			<div style="margin-top:10px;margin-left:10px;"><b>SupremeKitchen&Bathroom Pty.Ltd</b>
+			</div><br>
+			<div>
+				<table cellspacing="0" cellpadding="02" border="0" style="margin-left:10px;font-family:verdana;font-size:13px;">
+					<tr>
+						<td width="80px">Phone</td>
+						<td>:</td>
+						<td>03 9563 4660</td>
+					</tr>
+					<tr>
+						<td>Fax</td>
+						<td>:</td>
+						<td>03 9530 4193</td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td>:</td>
+						<td>info@supremebk.com.au</td>
+					</tr>
+					<tr>
+						<td>Mobile</td>
+						<td>:</td>
+						<td>0414 077 178 *Busines Hours</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div style="border:1 px solid black;height:30px;">
+		</div>
+		<div style="border:1 px solid lime;height:300px;background:white;border-radius:10px;">
+			<div style="margin-left:10px;margin-top:10px;font-size:17px;border:1 px solid black;width:290px;border-bottom:1px solid black;"><b>Service Area</b>
+			</div>
+			<div style="margin-left:10px;font-family:verdana;font-size:15px;margin-top:5px;">We service clients primarily throughout the East and South East of Melbourne.
+			</div>
+			<div style="border:1 px solid red;height:200px;margin-top:30px;">
+				<div style="float:left;height:200px;border:1 px solid red;width:50%;">
+					<div style="margin-left: 8px;text-align: justify;font-family: verdana;font-size: 13px;margin-top: 5px;">Our client base has extended through to the peninsula and to the Metropolitan north of Melbourne.
+					</div>
+					<div style="margin-left: 8px;text-align: justify;font-family: verdana;font-size: 13px;margin-top: 15px;">Ask us if we service your area.
+					</div>
+				</div>
+				<div style="float:left;height:200px;border:1 px solid blue;width:48%;">
+					<div>
+						<img src="imges/Melbourne.png" width="112px" height="154px" style="margin-left:15px;margin-top:5px;">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="border:1 px solid green;height:30px;clear:both;">
+	</div>
+	<div style="border:1 px solid red;height:100px;;clear:both;background:white;margin-top:120px;">
+		<div style="border:1 px solid green;width:50%;float:left;height:80px;">
+			<div style="font-weight: bold;margin-left:15px;margin-top:10px;">©2013 -Supreme Kitchen & Bathroom
+			</div>
+			<div style="margin-top:10px;margin-left:15px;color:#00675f;">Contact Us
+			</div>
+		</div>
+		<div style="border:1 px solid green;width:48%;float:left;height:80px;">
+			<div style="border:1 px solid black;float:left;height:70px;width:40%;">
+				<div>
+					<img src="imges/logo_rbp2.png" width="176" height="50" style="margin-top:5px;">
+				</div>
+			</div>
+			<div style="border:1 px solid black;float:left;height:70px;width:58%;">
+				<div>
+					<img src="imges/logo_hia4.png" width="250" height="50" style="margin-top:5px;">
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+ </BODY>
+</HTML>

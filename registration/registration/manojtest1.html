@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function apseries(){
+	  var a=2;
+	  var d=2;
+	  var n=document.getElementById("termno").value;
+	  series=a+(n-1)*d;
+	  alert("nth term is:"+series);
+
+  }
+  
+  </script>
+ </head>
+
+ <body>
+  <input type="text" id="termno">
+  <input type="button" value="Click" onclick="apseries()">
+ </body>
+</html>

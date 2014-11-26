@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function function1(){
+	  var a=document.getElementById("name").value;
+	  var b=document.getElementById("salary").value;
+	  var n=document.getElementById("first").value;
+	  var r1=document.getElementById("male").checked;
+	  var r2=document.getElementById("female").checked;
+	  var m=document.getElementById("number").value;
+	  var nameRegex = /^[a-zA-Z\-]+$/;
+	  if(document.getElementById("self").options[document.getElementById("self").selectedIndex].value=="self"){
+		  alert("please select employ");
+		  return;
+	  }
+	  if(a==""){
+		  alert("please enter your Company name");
+		  document.getElementById("name").focus();
+		  return;
+	  }
+	  if (nameRegex.test(a)==false){
+			alert("invalid company name");
+			document.getElementById("name").focus();
+			return;
+	  }
+	  if(b==""){
+		  alert("please enter your salary");
+		  document.getElementById("salary").focus();
+		  return;
+	  }
+	  if(isNaN(b)){
+		  alert("invalid salary");
+		  document.getElementById("salary").focus();
+		  return;
+	  }
+	  if(document.getElementById("bank").options[document.getElementById("bank").selectedIndex].value=="none"){
+		  alert("plese select bank");
+		  return;
+	  }
+	  if(n==""){
+		  alert("please enter your name");
+		  document.getElementById("first").focus();
+		  return;
+	  }
+	  if(nameRegex.test(n)==false){
+		  alert("invalid name");
+		  document.getElementById("first").focus();
+		  return;
+	  }
+	  if(r1==false && r2==false){
+		  alert("please select your gender");
+		  return;
+	  }
+	  if(document.getElementById("day").options[document.getElementById("day").selectedIndex].value=="day"){
+		  alert("please select day");
+		  return;
+	  }
+	  if(document.getElementById("month").options[document.getElementById("month").selectedIndex].value=="month"){
+			alert("please select month");
+			return;
+		}
+	  if(document.getElementById("year").options[document.getElementById("year").selectedIndex].value=="year"){
+		  alert("please select year");
+		  return;
+	  }
+	  if(document.getElementById("country").options[document.getElementById("country").selectedIndex].value=="select"){
+		  alert("please select country");
+		  return;
+	  }
+	  if(m==""){
+		  alert("please enter your mobile number");
+		  document.getElementById("number").focus();
+		  return;
+	  }
+	  if(isNaN(m)){
+		  alert("invalid mobile number");
+		  document.getElementById("number").focus();
+		  return;
+	  }
+	  
+
+  }
+  </script>
+ </head>
+
+ <body>
+	<table border="0" cellspacing="0" cellpadding="0" align="center" width="60%" height="300px">
+	<tr>
+		<td>
+			<table border="0" cellspacing="10" cellpadding="0" width="90%">
+					<tr>
+						<td colspan="2">Eligibility Info. check the Credit Cards offered
+						</td>
+					</tr>
+					
+					<tr>
+						<td align="right">Employment Type:</td>
+						<td>
+							<select id="self" onchange="test()" style="width:64%">
+								<option value="self" >Self Employed</option>
+								<option value="salar">Salaried</option>
+							</select>
+						</td>
+						
+					</tr>
+					<script>
+					function test() 
+                      {
+						  if(document.getElementById("self").options[document.getElementById("self").selectedIndex].value=="self"){
+							  document.getElementById("data").style.display="none";
+						  }
+						  else{
+							  document.getElementById("data").style.display="bloack";
+						  }
+					  }
+
+					</script>
+					<tr style="display:none;" id="data">
+						<td align="right">Name Of Company:</td>
+						<td>
+							<input type="text" id="name" size="28">
+						</td>
+						
+
+					</tr>
+					
+					<tr>
+						<td align="right">Monthly Take Home Salary:</td>
+						<td>
+							<input type="text" id="salary" size="28">
+						</td>
+					</tr>
+					
+					<tr>
+						<td align="right">Any existing credit card used<br> primarily ?:</td>
+										
+						<td valign="top">
+							<select id="bank" style="width:64%">
+								<option value="none">NONE</option>
+								<option value="american">AMERICAN EXPRESS BANK</option>
+								<option value="citi">CITI BANK</option>
+								<option value="hdfc">HDFC BANK</option>
+								<option value="icici">ICICI BANK</option>
+								<option value="kotak">KOTAK BANK</option>
+								<option value="standard">STANDARD CHARTERED BANK</option>
+								<option value="other">OTHER BAQNK</option>
+							</select>
+						</td>
+					</tr>
+			</table><br>
+				<tr>
+					<td>
+						<table border="0" cellspacing="10" cellpadding="0" width="90%">
+							<tr>
+						<td colspan="2">Contact Info. we keep this secure
+						</td>
+					</tr>
+							
+							<tr>
+								<td align="right">Name:</td>
+								<td>
+									<input type="text" id="first" size="29">
+								</td>
+							</tr>
+							<tr>
+								<td align="right">Gender:</td>
+								<td>
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td>
+											  <input type="radio" value="male" name="user" id="male">Male</td>
+											  <td><input type="radio" value="female" name="user" id="female">Female</td>
+										</tr>
+									</table>
+								</td>
+								
+							
+							<tr>
+								<td align="right">Date Of Birth:</td>
+								<td>
+									<select id="day">
+											<option value="day">Day</option>
+											<option value="01">01</option>
+											<option value="02">02</option>
+											<option value="03">03</option>
+											<option value="04">04</option>
+											<option value="05">05</option>
+											<option value="06">06</option>
+											<option value="07">07</option>
+											<option value="08">08</option>
+											<option value="09">09</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+											<option value="13">13</option>
+											<option value="14">14</option>
+											<option value="15">15</option>
+											<option value="16">16</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="27">27</option>
+											<option value="28">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+									</select>
+									<select id="month" style="width:70px">
+											<option value="month">Month</option>
+											<option value="jan">Jan</option>
+											<option value="feb">Feb</option>
+											<option value="mar">mar</option>
+											<option value="apr">apr</option>
+											<option value="may">may</option>
+											<option value="jun">Jun</option>
+											<option value="jul">Jul</option>
+											<option value="aug">Aug</option>
+											<option value="sec">Sec</option>
+											<option value="oct">Oct</option>
+											<option value="nov">Nov</option>
+											<option value="dec">Dec</option>
+									</select>
+									<select id="year" style="width:70px">
+											<option value="year">Year</option>
+											<option value="1990">1990</option>
+											<option value="1991">1991</option>
+											<option value="1992">1992</option>
+											<option value="1993">1993</option>
+											<option value="1994">1994</option>
+											<option value="1995">1995</option>
+											<option value="1996">1996</option>
+											<option value="1997">1997</option>
+											<option value="1998">1998</option>
+											<option value="1999">1999</option>
+											<option value="2000">2000</option>
+											<option value="2001">2001</option>
+											<option value="2002">2002</option>
+											<option value="2003">2003</option>
+											<option value="2004">2004</option>
+											<option value="2005">2005</option>
+											<option value="2006">2006</option>
+											<option value="2007">2007</option>
+											<option value="2008">2008</option>
+											<option value="2009">2009</option>
+											<option value="2010">2010</option>
+											<option value="2011">2011</option>
+											<option value="2012">2012</option>
+											<option value="2013">2013</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td align="right">City Of Residence:</td>
+								<td>
+									<select id="country" style="width:61%">
+										<option value="select">Select</option>
+										<option value="india">INDIA</option>
+										<option value="usa">USA</option>
+										<option value="uk">UK</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td align="right">Mobile Number:
+								</td>
+								<td>
+									<input type="text" id="number" size="29">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" align="center">
+									<input type="button" value="Submit" onclick="function1()">
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+		</td>
+	</tr>
+	</table>
+ </body>
+</html>

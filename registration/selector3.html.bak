@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+	#manoj>ul{
+		border:5px solid blue;
+		background:black;
+		color:white;
+		width:200px;
+		list-style:none;
+		padding-left:0;
+		padding:10px;
+	}
+  </style>
+ </HEAD>
+
+ <BODY>
+ <div id="manoj">
+  <ul>
+	<li>List Item
+		<ul>
+			<li>List Item</li>
+			<li>List Item</li>
+		</ul>
+	</li>
+	<li>List Item</li>
+	<li>List Item</li>
+	<li>List Item</li>
+  </ul>
+	</div>
+ </BODY>
+</HTML>

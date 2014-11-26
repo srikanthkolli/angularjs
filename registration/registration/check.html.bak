@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script type="text/javascript">
+  function function1()
+  {
+	  var t1=document.getElementById("tv").checked;
+	  var t2=document.getElementById("games").checked;
+	  var t3=document.getElementById("music").checked;
+	  var t4=document.getElementById("read").checked;
+	  if(t1==false && t2==false && t3==false && t4==false)
+	  {
+		  alert("you select any one checkbox");
+		  return;
+	  }
+	  else if(t1==true && t2==true && t3==true && t4==true)
+	  {
+		  alert("you select all");
+		  return;
+		  
+	  }
+	  else if(t1==true && t2==true && t3==true && t4==false)
+	  {
+		  alert("you select tv,games,music");
+		  return;
+	   }
+	   else if(t1==true && t3==true)
+	   {
+		   alert("you select tv,music");
+		   return;
+		}
+		else if(t1==true && t4==true)
+		{
+			alert("you select tv,read");
+			return;
+	    }
+	  else if(t1==true && t2==true)
+	  {
+		  alert("you select tv,games");
+		  return;
+	   } 
+	  else if(t3==true && t4==true)
+	  {
+		  alert("you select music,read");
+		  return;
+	  }
+	  else if(t1==true)
+	  {
+		  alert("you select tv");
+		  return;
+	  }
+	  else if(t2==true)
+	  {
+		  alert("you select games");
+		  return;
+	  }
+	  else if(t3==true)
+	  {
+		  alert("you select music");
+		  return;
+	   }
+	   else if(t4==true)
+	   {
+		   alert("you select read");
+		   return;
+	    }
+		
+		
+
+	  
+	  
+  }
+  </script>
+ </head>
+
+ <body>
+  <input type="checkbox" id="tv" value="first">Tv
+  <input type="checkbox" id="games" value="second">Games
+  <input type="checkbox" id="music" value="throd">Music
+  <input type="checkbox" id="read" value="forth">Read
+  <input type="button" value="Click" onclick="function1()">
+ </body>
+</html>

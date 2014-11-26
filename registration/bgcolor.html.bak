@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+  body{
+  background-color:black;
+  }
+  #manoj{
+  text-align:center;
+  color:blue;
+  }
+  .manoj1{
+  color:red;
+  }
+  </style>
+ </HEAD>
+
+ <BODY>
+  <h1 id="manoj">This is a heading.</h1>
+  <p class="manoj1">This is a paragraph.</p>
+ </BODY>
+</HTML>

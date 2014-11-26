@@ -1,0 +1,19 @@
+<!DOCTYPE>
+<HTML ng-app>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script src="angular.js"></script>
+ </HEAD>
+
+ <BODY>
+  Current temperature: <input ng-model='temp' type='number'/> Celcius
+<p ng-show="temp>=17">Not too bad! {{ temp }} degrees, {{ temp - 10
+}} would be a little cold</p>
+<p ng-show="temp<17">{{ temp }} degrees, is a little chilly, {{ temp
++ 10 }} would be a nicer</p>
+ </BODY>
+</HTML>

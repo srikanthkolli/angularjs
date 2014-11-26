@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html ng-app>
+<head>
+ <script src="angular.js"></script>
+ </head>
+<body>
+ <div ng-controller='HelloController'>
+ <p>{{greeting.text}}, World</p>
+ </div>
+</body>
+<script>
+	function HelloController($scope) {
+		$scope.greeting = { text: 'Hello' };
+	}
+</script>
+</html>

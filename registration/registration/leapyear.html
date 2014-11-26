@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+	function leapyear()
+	{
+		var year=document.getElementById("firstname").value;
+		
+		
+			if(year%4==0)
+			{
+				alert(year+ "is a leap year");
+			}
+			else
+			{
+				alert(year+ "is not a leap year");
+			}
+	}
+  </script>
+ </head>
+
+ <body>
+   Year:<input type="text" id="firstname"><br>
+ <!-- Second Name:<input type="text" id="secondname"><br> -->
+ <input type="button" onclick="leapyear()" value="test">
+ </body>
+</html>

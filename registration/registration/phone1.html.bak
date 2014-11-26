@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function validateFeedback(){
+    var phone = document.getElementById("phone");
+   
+    if(!RE.test(phone.value))
+    {
+        alert("You have entered an invalid phone number");
+        return false;
+    }
+    return true;
+}
+ </script>
+ </head>
+
+ <body>
+ Phoneno<input type="text" id="phone">
+  <input type="button" value="Click" onclick="validatefeedback()">
+  
+ </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script>
+  function function1(){
+	  var a=document.getElementById("choice").value;
+	  var b=document.getElementById("a").value;
+	  var c=document.getElementById("b").value;
+		if(a==1){
+			total=parseInt(b)+parseInt(c);
+			alert("addition"+total);
+			return;
+		}
+		if(a==2){
+			if(c>b){
+				sub=c-b;
+			}
+			else{
+				sub=b-c;
+			}
+			alert("subtraction"+sub);
+			return;
+		}
+		if(a==3){
+			mul=b*c;
+			alert("multiplication"+mul);
+			return;
+		}
+		if(a==4){
+			alert("divition");
+			return;
+		}
+		
+  }
+  </script>
+ </head>
+
+ <body>
+  Please enter your choice<input type="text" id="choice"><br>
+  A<input type="text" id="a"><br>
+  B<input type="text" id="b">
+  <input type="button" value="Click" onclick="function1()">
+ </body>
+</html>
