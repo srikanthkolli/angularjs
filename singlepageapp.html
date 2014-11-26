@@ -3,11 +3,10 @@
 <head>
  <script src="angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
-
  </head>
 <body ng-app="OnePageApp">
 <div class='container'>
-		<div><a href='#/login'>Login</a> | <a href='#/signup'>Sign Up</a></div>
+		<div ng-show=""><a href='#/login'>Login</a> | <a href='#/signup'>Sign Up</a></div>
 		<div ng-view></div>
  </div>
  <script>
@@ -20,12 +19,18 @@
 		  when('/signup', {
 			templateUrl: 'templates/signUpTemplate.html',
 			controller: 'SignUpScreenController'
+		  }).when('/homescreen', {
+			templateUrl: 'templates/homeScreen.php',
+			controller: 'HomeScreenController'
+		  }).when('/adminhomescreen', {
+			templateUrl: 'templates/AdminhomeScreen.php',
+			controller: 'AdminHomeScreenController'
 		  }).
 		  otherwise({
 			 templateUrl: 'templates/loginTemplate.html',
 			 controller: 'LoginScreenController'
 		  });
-	}]).controller("SignUpScreenController", function($scope, $http, $location, messageService){
+	}]).controller("SignUpScreenController", function($scope, $http, $location, messageFactory){
 		var signupdata = {'user_name':'', 'user_email':''};
 		$scope.submitFormData = function(){
  					if($scope.UserSignUpForm.user_name.$valid == false){
@@ -38,7 +43,7 @@
  						$http.post('angular-ajax.php', {action:'signUpFunc', data:{user_name:$scope.UserSignUpForm.user_name.$viewValue, user_email:$scope.UserSignUpForm.user_email.$viewValue}}).
 						  success(function(data, status, headers, config) {
 							if(data=='success'){
-								messageService.set('Your details has been successfully submitted. Please login here');
+								messageFactory.setSignupMsg('Your details has been successfully submitted. Please login here');
 								$location.path('/login');
 							}else
 								alert('Something went wrong');
@@ -48,8 +53,8 @@
 						  });
 					}
 			}
-	 }).controller('LoginScreenController', function($scope, messageService){
-		$scope.loginmessages = messageService.get();
+	 }).controller('LoginScreenController', function($scope,$http, $location, messageFactory){
+		$scope.loginmessages = messageFactory.getSignupMsg();
 		 $scope.submitFormData = function(){
   					if($scope.UserLoginForm.user_email.$error.pattern == true || $scope.UserLoginForm.user_email.$error.required == true){
 						alert("Please enter your email");
@@ -57,20 +62,35 @@
 					}else if($scope.UserLoginForm.user_password.$valid  == false){
 						alert("Please enter password");
 						return false;
+					}else{
+						$http.post('angular-ajax.php', {action:'loginFunc', data:{user_email:$scope.UserLoginForm.user_email.$viewValue, user_password:$scope.UserLoginForm.user_password.$viewValue}}).
+						success(function(data, status, headers, config){
+							if(data=='success'){
+ 								$location.path('/homescreen');
+							}else if(data=='invalid')
+								alert('Invalid Email/Password');
+							else
+								alert('Something went wrong');
+						}).error(function(data, status, headers, config){
+						
+						
+						})
+
 					}
 			}
 	 
-	 }).factory('messageService', function() {
-					 var savedData = '';
-					 function set(data) {
-					   savedData = data;
+	 }).factory('messageFactory', function(){
+					 var signupmsg = '';
+					 var logincheck = false;
+					 function setSignupMsg(data) {
+					   signupmsg = data;
 					 }
-					 function get() {
-					  return savedData;
+					 function getSignupMsg() {
+					  return signupmsg;
 					 }
 					 return {
-						set: set,
-						get: get
+						setSignupMsg: setSignupMsg,
+						getSignupMsg: getSignupMsg
 					 }
 				});
 </script>

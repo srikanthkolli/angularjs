@@ -12,6 +12,20 @@
 		}else
 			die('error');
 	}
+
+	function loginFunc(){
+		global $posted_data, $dbconn;
+		$useremail = $posted_data->data->user_email;
+		$userpassword = sha1($posted_data->data->user_password);
+		$qry_prep = $dbconn->prepare("select user_id from tbl_users where user_email = :email and user_password = :password");
+		$qry_prep->execute(array(":email"=>$useremail, ":password"=>$userpassword));
+		if($qry_prep->rowCount() > 0 ){
+			session_start();
+			$_SESSION['user_id'] = $qry_prep->fetchColumn();
+			die('success');
+		}else
+			die('invalid');
+	}
 	if(!empty($posted_data->action)){
 		$f_to_call = trim($posted_data->action);
 		if(function_exists($f_to_call)){
